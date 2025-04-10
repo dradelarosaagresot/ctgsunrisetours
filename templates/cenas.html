@@ -1,0 +1,609 @@
+{% extends "base.html" %}
+
+{% block title %}Cenas y Atardeceres{% endblock %}
+{% block fondo %}fondo-cenas{% endblock %}
+
+{% block content %}
+    <div class="hero-cenas">
+        <div class="hero-text">
+            <h1>Cenas y Atardeceres en Cartagena 🌅</h1>
+            <p>Disfruta de una experiencia inolvidable con nuestras cenas y tours al atardecer.</p>
+        </div>
+    </div>
+
+<div class="tours-container">
+
+    <!-- Sunset Barco Phantom -->
+<div class="tour-card">
+    <img src="{{ url_for('static', filename='images/phantom.jpg') }}" alt="Sunset Barco Phantom">
+    <h2>Sunset Barco Phantom</h2></strong>$70.000 por persona</p>
+    <p><strong>SU RESERVA INCLUYE:</strong></p>
+    <ul class="included">
+        <li><span class="check green">✔</span>2 horas de recorrido por la Bahia</li>
+        <li><span class="check green">✔</span>3 bebidas </li></strong>(Ron, Aguardiente, Cerveza, Gaseosa, Agua.)</p>
+        <li><span class="check green">✔</span>Servicio de Baños</li>
+        <li><span class="check green">✔</span>Musica</li>
+        <li><span class="check green">✔</span>Menu a bordo</li></strong>(con cargo adicional)</p>
+        
+    </ul>
+    <p><strong>NO INCLUYE:</strong></p>
+    <ul class="not-included">
+        <li><span class="check red">✘</span>Impuesto Portuario $16.000 </li>
+        <li><span class="check red">✘</span> Gastos no especificados en el plan</li>
+    </ul>
+    <p><strong>Valor:</strong> $70,000 COP adultos</p>
+    <p><strong>Valor:</strong> $15,000 COP niños(4a 10 años)</p>
+    <p><strong>PARA CONFIRMAR RESERVA:</strong> Se debe realizar un pago parcial de <strong>$10.000</strong> por cada persona.</p>
+    <p><strong>Lugar de recogida:</strong>Muelle de la Bodeguita puerta #4</p>
+    <p><strong>Hora de salida:</strong> 5:00 PM</p>
+    <p><strong>Hora de llegada:</strong> 7:00 PM</p>
+   
+
+    <a href="/reserva?tour=sunset%20barco%20phantom"><button>Reservar</button></a>
+</div>
+<style>
+    .tour-card {
+        font-family: Arial, sans-serif;
+        max-width: 400px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        background: #fff;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 5px;
+    }
+
+    .check {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .green {
+        color: green;
+    }
+
+    .red {
+        color: red;
+    }
+</style>
+    
+    <!-- Cena Sibarita Express -->
+<div class="tour-card">
+    <img src="{{ url_for('static', filename='images/cena_sibarita_express.jpg') }}" alt="Cena Sibarita Express">
+    <h2>Cena Sibarita Express</h2></strong>$200.000 por persona</p>
+    <p><strong>SU RESERVA INCLUYE:</strong></p>
+    <ul class="included">
+        <li><span class="check green">✔</span>2 horas de recorrido por la Bahia</li>
+        <li><span class="check green">✔</span>Cena Menu Servido a tres Tiempos</li></strong>(Entrada, Plato Principal, Postrte)</p>
+        <li><span class="check green">✔</span>2 Copas de Vino por persona</li>
+        <li><span class="check green">✔</span>Servicio a Bordo</li>
+        <li><span class="check green">✔</span>Baños para damas y caballeros</li>
+        <li><span class="check green">✔</span>Menu de Bebidas premium a bordo</li></strong>(con cargo adicional)</p>
+        
+    </ul>
+    <p><strong>NO INCLUYE:</strong></p>
+    <ul class="not-included">
+        <li><span class="check red">✘</span>Impuesto Portuario $16.000 </li>
+        <li><span class="check red">✘</span> Gastos no especificados en el plan</li>
+    </ul>
+    <p><strong>Valor:</strong> $200,000 COP adultos</p>
+    <p><strong>Valor:</strong> $100,000 COP niños(4a 10 años)</p>
+    <p><strong>PARA CONFIRMAR RESERVA:</strong> Se debe realizar un pago parcial de <strong>$50.000</strong> por cada persona.</p>
+    <p><strong>Lugar de recogida:</strong>Muelle de la Bodeguita puerta #4</p>
+    <p><strong>Hora de salida:</strong> 7:00 PM</p>
+    <p><strong>Hora de llegada:</strong> 9:00 PM</p>
+   
+
+    <a href="/reserva?tour=cena%20Sibarita%20express"><button>Reservar</button></a>
+</div>
+<style>
+    .tour-card {
+        font-family: Arial, sans-serif;
+        max-width: 400px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        background: #fff;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 5px;
+    }
+
+    .check {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .green {
+        color: green;
+    }
+
+    .red {
+        color: red;
+    }
+</style>
+
+<!-- Cena Sibarita Master -->
+<div class="tour-card">
+    <img src="{{ url_for('static', filename='images/cena_sibarita_master.jpg') }}" alt="Cena Sibarita Master">
+    <h2>Cena Sibarita Master</h2></strong>$275.000 por persona</p>
+    <p><strong>SU RESERVA INCLUYE:</strong></p>
+    <ul class="included">
+        <li><span class="check green">✔</span>2 horas de recorrido por la Bahia</li>
+        <li><span class="check green">✔</span>Cena Menu Servido a cuatro Tiempos</li></strong>(Dos Entrada, Plato Principal, Postrte)</p>
+        <li><span class="check green">✔</span>Media Botella de Vino por persona</li>
+        <li><span class="check green">✔</span>Servicio a Bordo</li>
+        <li><span class="check green">✔</span>Baños para damas y caballeros</li>
+        <li><span class="check green">✔</span>Menu de Bebidas premium a bordo</li></strong>(con cargo adicional)</p>
+        
+    </ul>
+    <p><strong>NO INCLUYE:</strong></p>
+    <ul class="not-included">
+        <li><span class="check red">✘</span>Impuesto Portuario $16.000 </li>
+        <li><span class="check red">✘</span> Gastos no especificados en el plan</li>
+    </ul>
+    <p><strong>Valor:</strong> $275,000 COP adultos</p>
+    <p><strong>Valor:</strong> $137,500 COP niños(4a 10 años)</p>
+    <p><strong>PARA CONFIRMAR RESERVA:</strong> Se debe realizar un pago parcial de <strong>$60.000</strong> por cada persona.</p>
+    <p><strong>Lugar de recogida:</strong>Muelle de la Bodeguita puerta #4</p>
+    <p><strong>Hora de salida:</strong> 7:00 PM</p>
+    <p><strong>Hora de llegada:</strong> 9:00 PM</p>
+   
+
+    <a href="/reserva?tour=cena%20Sibarita%20Master"><button>Reservar</button></a>
+</div>
+<style>
+    .tour-card {
+        font-family: Arial, sans-serif;
+        max-width: 400px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        background: #fff;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 5px;
+    }
+
+    .check {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .green {
+        color: green;
+    }
+
+    .red {
+        color: red;
+    }
+</style>
+
+<!-- Atardecer Sibarita Express -->
+<div class="tour-card">
+    <img src="{{ url_for('static', filename='images/atardecer_express.jpg') }}" alt="Atardecer Sibarita Express">
+    <h2>Atardecer Sibarita Express</h2></strong>$115.000 por persona</p>
+    <p><strong>SU RESERVA INCLUYE:</strong></p>
+    <ul class="included">
+        <li><span class="check green">✔</span>2 horas de recorrido por la Bahia</li>
+        <li><span class="check green">✔</span>Barra ilimitada de </li></strong>(Ron punch, cuba libre, limonada, agua y gaseosa.)</p>
+        <li><span class="check green">✔</span>Servicio a Bordo</li>
+        <li><span class="check green">✔</span>Baños para damas y caballeros</li>
+        <li><span class="check green">✔</span>Menu de Bebidas premium a bordo</li></strong>(con cargo adicional)</p>
+        
+    </ul>
+    <p><strong>NO INCLUYE:</strong></p>
+    <ul class="not-included">
+        <li><span class="check red">✘</span>Impuesto Portuario $16.000 </li>
+        <li><span class="check red">✘</span> Gastos no especificados en el plan</li>
+    </ul>
+    <p><strong>Valor:</strong> $115,000 COP adultos</p>
+    <p><strong>Valor:</strong> $57,500 COP niños(4a 10 años)</p>
+    <p><strong>PARA CONFIRMAR RESERVA:</strong> Se debe realizar un pago parcial de <strong>$25.000</strong> por cada persona.</p>
+    <p><strong>Lugar de recogida:</strong>Muelle de la Bodeguita puerta #4</p>
+    <p><strong>Hora de salida:</strong> 5:00 PM</p>
+    <p><strong>Hora de llegada:</strong> 7:00 PM</p>
+   
+
+    <a href="/reserva?tour=cena%20Sibarita%20express"><button>Reservar</button></a>
+</div>
+<style>
+    .tour-card {
+        font-family: Arial, sans-serif;
+        max-width: 400px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        background: #fff;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 5px;
+    }
+
+    .check {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .green {
+        color: green;
+    }
+
+    .red {
+        color: red;
+    }
+</style>
+
+<!-- Atardecer Sibarita Master -->
+<div class="tour-card">
+    <img src="{{ url_for('static', filename='images/atardecer_master.jpg') }}" alt="Atardecer Sibarita Master">
+    <h2>Atardecer Sibarita Master</h2></strong>$140.000 por persona</p>
+    <p><strong>SU RESERVA INCLUYE:</strong></p>
+    <ul class="included">
+        <li><span class="check green">✔</span>2 horas de recorrido por la Bahia</li>
+        <li><span class="check green">✔</span>Barra ilimitada de </li></strong>(Ron punch, cuba libre, limonada, agua y gaseosa.)</p>
+        <li><span class="check green">✔</span>Servicio a Bordo</li>
+        <li><span class="check green">✔</span>Baños para damas y caballeros</li>
+        <li><span class="check green">✔</span>Menu de Bebidas premium a bordo</li></strong>(con cargo adicional)</p>
+        
+    </ul>
+    <p><strong>NO INCLUYE:</strong></p>
+    <ul class="not-included">
+        <li><span class="check red">✘</span>Impuesto Portuario $16.000 </li>
+        <li><span class="check red">✘</span> Gastos no especificados en el plan</li>
+    </ul>
+    <p><strong>Valor:</strong> $140,000 COP adultos</p>
+    <p><strong>Valor:</strong> $70,000 COP niños(4a 10 años)</p>
+    <p><strong>PARA CONFIRMAR RESERVA:</strong> Se debe realizar un pago parcial de <strong>$30.000</strong> por cada persona.</p>
+    <p><strong>Lugar de recogida:</strong>Muelle de la Bodeguita puerta #4</p>
+    <p><strong>Hora de salida:</strong> 5:00 PM</p>
+    <p><strong>Hora de llegada:</strong> 7:00 PM</p>
+   
+
+    <a href="/reserva?tour=cena%20Sibarita%20Master"><button>Reservar</button></a>
+</div>
+<style>
+    .tour-card {
+        font-family: Arial, sans-serif;
+        max-width: 400px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        background: #fff;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 5px;
+    }
+
+    .check {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .green {
+        color: green;
+    }
+
+    .red {
+        color: red;
+    }
+</style>
+
+<!-- Noche Blanca -->
+<div class="tour-card">
+    <img src="{{ url_for('static', filename='images/noche_blanca.jpg') }}" alt="Noche Blanca">
+    <h2>Noche Blanca</h2></strong>$250.000 por persona</p>
+    <p><strong>SU RESERVA INCLUYE:</strong></p>
+    <ul class="included">
+        <li><span class="check green">✔</span>3 horas de recorrido por la Bahia</li>
+        <li><span class="check green">✔</span>Coctel de Bienvenida</li>
+        <li><span class="check green">✔</span>Presentaciones Tematicas</li>
+        <li><span class="check green">✔</span>Barra Libre en Licores Nacionales</li></strong>(Aguardiente, Ron y Vodka, NO Cervezas)</p>
+        <li><span class="check green">✔</span>Cena Tipo Buffet</li></strong>(2 Proteinas, 4 Acompañantes y un Postre.)</p>
+        <li><span class="check green">✔</span>Gaseosa en Vaso, Agua en purificador</li>
+        <li><span class="check green">✔</span>Concursos y Premios Sorpresas</li>
+        <li><span class="check green">✔</span>Baños para damas y caballeros</li>
+        <li><span class="check green">✔</span>Dj Animador en Vivo</li>
+        
+    </ul>
+    <p><strong>NO INCLUYE:</strong></p>
+    <ul class="not-included">
+        <li><span class="check red">✘</span>Impuesto Portuario $16.000 </li>
+        <li><span class="check red">✘</span> Gastos no especificados en el plan</li>
+    </ul>
+    <p><strong>Valor:</strong> $275,000 COP adultos</p>
+    <p><strong>Valor:</strong> $200,000 COP niños(4 a 10 años)</p>
+    <p><strong>PARA CONFIRMAR RESERVA:</strong> Se debe realizar un pago parcial de <strong>$80.000</strong> por cada persona.</p>
+    <p><strong>Lugar de recogida:</strong>Muelle de la Bodeguita puerta #4</p>
+    <p><strong>Hora de salida:</strong> 8:00 PM</p>
+    <p><strong>Hora de llegada:</strong> 11:00 PM</p>
+   
+
+    <a href="/reserva?tour=noche%20blanca"><button>Reservar</button></a>
+</div>
+<style>
+    .tour-card {
+        font-family: Arial, sans-serif;
+        max-width: 400px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        background: #fff;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 5px;
+    }
+
+    .check {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .green {
+        color: green;
+    }
+
+    .red {
+        color: red;
+    }
+</style>
+
+
+<!-- Tour Bahia Bequia -->
+<div class="tour-card">
+    <img src="{{ url_for('static', filename='images/bequia.jpg') }}" alt="Tour Bahia Bequia">
+    <h2>Tour Bahia Bequia</h2></strong>$120.000 por persona</p>
+    <p><strong>SU RESERVA INCLUYE:</strong></p>
+    <ul class="included">
+        <li><span class="check green">✔</span>2 horas de recorrido por la Bahia</li>
+        <li><span class="check green">✔</span>Coctel de Bienvenida</li>
+        <li><span class="check green">✔</span>Presentaciones Tematicas</li>
+        <li><span class="check green">✔</span>Barra Libre en Licores Nacionales</li></strong>(Aguardiente, Ron y Vodka, NO Cervezas)</p>
+        <li><span class="check green">✔</span>Charlas de puntos de interes</li>
+        <li><span class="check green">✔</span>Gaseosa en Vaso, Agua en purificador</li>
+        <li><span class="check green">✔</span>Concursos y Premios Sorpresas</li>
+        <li><span class="check green">✔</span>Baños para damas y caballeros</li>
+        <li><span class="check green">✔</span>Dj Animador en Vivo</li>
+        <li><span class="check green">✔</span>Show de Bailarines</li>
+        <li><span class="check green">✔</span>Clases de Bailes</li>
+        
+    </ul>
+    <p><strong>NO INCLUYE:</strong></p>
+    <ul class="not-included">
+        <li><span class="check red">✘</span>Impuesto Portuario $16.000 </li>
+        <li><span class="check red">✘</span> Gastos no especificados en el plan</li>
+    </ul>
+    <p><strong>Valor:</strong> $120,000 COP adultos</p>
+    <p><strong>Valor:</strong> $96,000 COP niños(4 a 10 años)</p>
+    <p><strong>PARA CONFIRMAR RESERVA:</strong> Se debe realizar un pago parcial de <strong>$80.000</strong> por cada persona.</p>
+    <p><strong>Lugar de recogida:</strong>Muelle de la Bodeguita puerta #4</p>
+    <p><strong>Hora de salida:</strong> 5:20 PM</p>
+    <p><strong>Hora de llegada:</strong> 7:30 PM</p>
+   
+
+    <a href="/reserva?tour=tour%20bahia%20bequia"><button>Reservar</button></a>
+</div>
+<style>
+    .tour-card {
+        font-family: Arial, sans-serif;
+        max-width: 400px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        background: #fff;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 5px;
+    }
+
+    .check {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .green {
+        color: green;
+    }
+
+    .red {
+        color: red;
+    }
+</style>
+
+
+    
+    
+</div>
+
+<!-- Sección: ¿Sabías que? Cenas y Atardeceres -->
+<style>
+    .sabias-que {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        padding: 3rem 1rem;
+        background-color: #fff5f0;
+        border-radius: 20px;
+        margin: 3rem 0;
+        flex-wrap: wrap;
+    }
+
+    .sabias-que img {
+        width: 100%;
+        max-width: 450px;
+        border-radius: 15px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .sabias-que-texto {
+        max-width: 600px;
+    }
+
+    .sabias-que-texto h2 {
+        font-size: 2rem;
+        color: #b14a26;
+        margin-bottom: 1rem;
+    }
+
+    .sabias-que-texto p {
+        font-size: 1.1rem;
+        line-height: 1.7;
+        color: #444;
+    }
+
+    @media screen and (max-width: 768px) {
+        .sabias-que {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+</style>
+
+
+    
+    
+</div>
+
+<!-- Sección: ¿Sabías que? Cenas y Atardeceres -->
+<style>
+    .sabias-que {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        padding: 3rem 1rem;
+        background-color: #fff5f0;
+        border-radius: 20px;
+        margin: 3rem 0;
+        flex-wrap: wrap;
+    }
+
+    .sabias-que img {
+        width: 100%;
+        max-width: 450px;
+        border-radius: 15px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .sabias-que-texto {
+        max-width: 600px;
+    }
+
+    .sabias-que-texto h2 {
+        font-size: 2rem;
+        color: #b14a26;
+        margin-bottom: 1rem;
+    }
+
+    .sabias-que-texto p {
+        font-size: 1.1rem;
+        line-height: 1.7;
+        color: #444;
+    }
+
+    @media screen and (max-width: 768px) {
+        .sabias-que {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+</style>
+
+
+
+<section class="sabias-que" style="display: flex; align-items: center; gap: 2rem; padding: 2rem;">
+    <!-- Imagen con animación -->
+
+    <img
+        src="{{ url_for('static', filename='images/sabias_que_cenas.jpg') }}" 
+        alt="Cena y atardecer Cartagena"
+        style="width: 50%; border-radius: 15px;"
+        data-aos="fade-rigth"
+    >
+
+    <!-- Texto con animación -->
+    <div style="width: 50%;" data-aos="fade-left">
+        <h2 style="color: #2c3e50;">¿Sabías que?</h2>
+        <p style="font-size: 1.1rem; line-height: 1.6;">
+            Cartagena es uno de los destinos más románticos del Caribe, y sus atardeceres han sido reconocidos como
+            algunos de los más bellos del mundo. 🌇 Muchos visitantes eligen disfrutar de una cena a bordo de un yate 
+            o en restaurantes frente al mar, donde el cielo se pinta de tonos naranjas y rosados. 
+            ¡Una experiencia sensorial perfecta para celebrar el amor, la vida o simplemente dejarse sorprender! 💫🍽️
+        </p>
+    </div>
+</section>
+
+
+{% endblock %}

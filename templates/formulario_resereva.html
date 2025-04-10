@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de Tour</title>
+</head>
+<body>
+    <h1>Reserva tu tour: {{ tour }}</h1>
+    <form action="/confirmar_reserva" method="POST">
+        <label for="nombre">Nombre y Apellidos:</label>
+        <input type="text" id="nombre" name="nombre" required><br>
+
+        <label for="telefono">Celular:</label>
+        <input type="tel" id="telefono" name="telefono" required><br>
+
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="fecha">Fecha del Tour:</label>
+        <input type="date" id="fecha" name="fecha" required><br>
+
+        <input type="hidden" name="tour" value="{{ tour }}">
+
+        <button type="submit">Confirmar Reserva</button>
+    </form>
+</body>
+</html>

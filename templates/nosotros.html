@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+
+{% block title %}Sobre Nosotros{% endblock %}
+{% block fondo %}fondo-nosotros{% endblock %}
+{% block content %}
+<section class="nosotros">
+    <div class="banner">
+        <img src="{{ url_for('static', filename='images/nosotros-banner.jpg') }}" alt="Nosotros">
+        <h1>Sobre Nosotros</h1>
+    </div>
+
+    <div class="contenido">
+        <h2>Conócenos</h2>
+
+        <div class="info-boxes">
+            <div class="box">
+                <h2>¿Quiénes Somos?</h2>
+                <p>En Cartagena Sunrise Tours, nos definimos por nuestra pasión por el turismo y nuestro compromiso con brindar 
+                    experiencias inolvidables a cada viajero que elige descubrir Cartagena con nosotros. Con más de 4 años en la industria, 
+                    hemos cultivado una reputación de excelencia y profesionalismo, 
+                    respaldada por nuestro equipo de expertos locales dedicados a mostrar lo mejor de nuestra ciudad.
+                     Somos más que una empresa turística; somos embajadores de la belleza y la cultura de Cartagena</p>
+            </div>
+            <div class="box">
+                <h2>Misión</h2>
+                <p>Nuestra misión es ofrecer servicios turísticos de la más alta calidad,
+                     diseñados para satisfacer las necesidades y deseos de nuestros clientes. 
+                     Nos esforzamos por superar las expectativas en cada tour, proporcionando experiencias auténticas, 
+                     seguras y enriquecedoras que dejen una impresión duradera. 
+                     Nos comprometemos a promover el turismo sostenible y responsable, 
+                     contribuyendo al desarrollo económico y social de nuestra comunidad,
+                     preservando el patrimonio cultural y natural de Cartagena para las generaciones futuras. </p>
+            </div>
+            <div class="box">
+                <h2>Visión</h2>
+                <p>Nuestra visión es ser reconocidos como el principal referente en turismo experiencial en Cartagena, 
+                   distinguiéndonos por nuestra excelencia en el servicio, nuestra pasión por la hospitalidad y nuestro compromiso con la sostenibilidad. 
+                   Nos esforzamos por expandir nuestro alcance y diversificar nuestra oferta, creando nuevos y emocionantes itinerarios que inspiren a los viajeros a explorar cada rincón de nuestra hermosa ciudad. 
+                   Aspiramos a ser líderes innovadores en la industria, impulsando el crecimiento del turismo en Cartagena y consolidando nuestra posición como un destino de clase mundial. </p>
+            </div>
+        </div>
+
+        <h2>Política de Reservas y Cancelaciones</h2>
+        <div class="politica">
+            <p>De acuerdo con la legislación turística en Colombia, las reservas están sujetas a las siguientes condiciones:</p>
+            <ul>
+                <li><strong>Cancelaciones:</strong> Se permiten hasta 48 horas antes del tour sin penalización. Después de este periodo, aplicarán cargos.</li>
+                <li><strong>Modificaciones:</strong> Puedes cambiar la fecha con al menos 24 horas de anticipación, sujeto a disponibilidad.</li>
+                <li><strong>No Show:</strong> Si no te presentas en la fecha y hora programada, no habrá reembolso.</li>
+                <li><strong>Reembolsos:</strong> En caso de fuerza mayor (clima, cierre de destinos), se ofrecerá reprogramación o reembolso parcial.</li>
+            </ul>
+        </div>
+
+        <h2>Nuestro Equipo</h2>
+        <div class="equipo">
+            <div class="miembro">
+                <img src="{{ url_for('static', filename='images/team1.jpg') }}" alt="Guía 1">
+                <h3>Noheli Rodriguez</h3>
+                <p>fundadora y CEO</p>
+            </div>
+            <div class="miembro">
+                <img src="{{ url_for('static', filename='images/team2.jpg') }}" alt="Guía 2">
+                <h3>Rosangelica Rodriguez</h3>
+                <p>Guia Especialista en Tours</p>
+            </div>
+            <div class="miembro">
+                <img src="{{ url_for('static', filename='images/team3.jpg') }}" alt="Guía 3">
+                <h3>Darwin de la Rosa</h3>
+                <p>Asesor de ventas</p>
+            </div>
+        </div>
+
+        <h2>Testimonios</h2>
+        <div class="testimonios">
+            <div class="testimonio">
+                <p>"Un viaje increíble, la organización y el servicio fueron de primera. ¡Definitivamente volveré!"</p>
+                <h4>- Andrea Rojas</h4>
+            </div>
+            <div class="testimonio">
+                <p>"Me encantó el tour a Barú, todo fue perfecto. Gracias por la atención personalizada."</p>
+                <h4>- Luis Fernández</h4>
+            </div>
+        </div>
+
+        <div class="rnt-container">
+            <h3>📜 Registro Nacional de Turismo (RNT)</h3>
+            <img src="{{ url_for('static', filename='img/rnt.jpg') }}" alt="Registro Nacional de Turismo" class="rnt-imagen">
+        </div>
+        
+    </div>
+</section>
+{% endblock %}

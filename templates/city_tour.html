@@ -1,0 +1,443 @@
+{% extends "base.html" %}
+
+{% block title %}City Tours - Mi Agencia{% endblock %}
+{% block fondo %}fondo-city{% endblock %}
+
+{% block content %}
+   <div class="hero-city tours">
+        <div class="hero-text">
+            <h1>Explora la ciudad con nuestros increíbles recorridos turísticos.</h1>
+            <p>Cartagena de indias destino turistico por excelencia.</p>
+        </div>
+    </div>
+        
+<div class="tour-container">
+
+ <!-- Tour: City Tour en Chiva -->
+ <div class="tour-card">
+    <img src="{{ url_for('static', filename='images/city_tour_chiva.jpg') }}" alt="City Tour en Chiva">
+    <h2>City Tour en Chiva</h2></strong>$80.000 por persona</p>
+    <p>Explora la ciudad con nuestros increíbles recorridos turísticos..</p>
+
+    <p><strong>SU RESERVA INCLUYE:</strong></p>
+    <ul class="included">
+        <li><span class="check green">✔</span>Transporte en Chiva Folklórica</li>
+        <li><span class="check green">✔</span>Panorámico por la torre del reloj</li>
+        <li><span class="check green">✔</span>Centro de convenciones</li>
+        <li><span class="check green">✔</span>Barrio Manga</li>
+        <li><span class="check green">✔</span>Fuerte San Sebastian de Pastelillo</li>
+        <li><span class="check green">✔</span>Botas Viejas</li>
+        <li><span class="check green">✔</span>Castillo San Felipe(entrada incluida)</li>
+        <li><span class="check green">✔</span>Letras de Cartagena</li>
+        <li><span class="check green">✔</span>Ciudad Amurallada</li>
+        <li><span class="check green">✔</span>Guia Profesional</li>
+    </ul>
+
+    <p><strong>NO INCLUYE:</strong></p>
+    <ul class="not-included">
+        <li><span class="check red">✘</span> Gastos No Especificados en el plan</li>
+    </ul>
+
+    <p><strong>Hora de salida:</strong> 9:00 AM | <strong>Regreso:</strong> 1:00 PM</p>
+    <p><strong>Hora de salida:</strong> 2:00 PM | <strong>Regreso:</strong> 6:00 PM</p>
+    <p><strong>Valor:</strong> $80,000 COP</p>
+    <p><strong>PARA CONFIRMAR RESERVA:</strong> Se debe realizar un pago parcial de <strong>$20.000</strong> por cada adulto.</p>
+
+    <a href="{{ url_for('reservar', tour='City Tour en Chiva') }}"><button>Reservar</button></a>
+</div>
+
+<style>
+    .tour-card {
+        font-family: Arial, sans-serif;
+        max-width: 450px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        background: #fff;
+        box-shadow: 2px 2px 10px rgba(249, 244, 244, 0.1);
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 5px;
+    }
+
+    .check {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .green {
+        color: green;
+    }
+
+    .red {
+        color: red;
+    }
+    
+</style>
+
+<!-- Tour: Chiva Rumbera -->
+<div class="tour-card">
+    <img src="{{ url_for('static', filename='images/chiva_rumbera.jpg') }}" alt="Chiva Rumbera">
+    <h2>Chiva Rumbera</h2></strong>$50.000 por persona</p>
+    <p>Explora la ciudad con nuestros increíbles recorridos turísticos..</p>
+
+    <p><strong>SU RESERVA INCLUYE:</strong></p>
+    <ul class="included">
+        <li><span class="check green">✔</span>Transporte en Chiva Folklórica</li>
+        <li><span class="check green">✔</span>Panorámico por la torre del reloj</li>
+        <li><span class="check green">✔</span>Guia Animador</li>
+        <li><span class="check green">✔</span>Barrio Manga</li>
+        <li><span class="check green">✔</span>Bocagrande-Laguito</li>
+        <li><span class="check green">✔</span>Botas Viejas</li>
+        <li><span class="check green">✔</span>Castillo San Felipe</li>
+        <li><span class="check green">✔</span>Letras de Cartagena</li>
+        <li><span class="check green">✔</span>Ciudad Amurallada</li>
+        <li><span class="check green">✔</span>Entrada a Discoteca(cover incluido)</li>
+    </ul>
+
+    <p><strong>NO INCLUYE:</strong></p>
+    <ul class="not-included">
+        <li><span class="check red">✘</span> Gastos No Especificados en el plan</li>
+    </ul>
+
+    <p><strong>Hora de salida:</strong> 8:00 PM | <strong>Regreso:</strong> 11:00 PM</p>
+    <p><strong>Valor:</strong> $50,000 COP</p>
+    <p><strong>PARA CONFIRMAR RESERVA:</strong> Se debe realizar un pago parcial de <strong>$20.000</strong> por cada adulto.</p>
+
+    <a href="{{ url_for('reservar', tour='Chiva Rumbera') }}"><button>Reservar</button></a>
+</div>
+
+<style>
+    .tour-card {
+        font-family: Arial, sans-serif;
+        max-width: 450px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        background: #fff;
+        box-shadow: 2px 2px 10px rgba(249, 244, 244, 0.1);
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 5px;
+    }
+
+    .check {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .green {
+        color: green;
+    }
+
+    .red {
+        color: red;
+    }
+    
+</style>
+
+<!-- Tour: City Tour Climatizado Vip -->
+<div class="tour-card">
+    <img src="{{ url_for('static', filename='images/city_tour_climatizado.jpg') }}" alt="City Tour en Chiva">
+    <h2>City Tour Climatizado Vip</h2></strong>$80.000 por persona</p>
+    <p>Explora la ciudad con nuestros increíbles recorridos turísticos..</p>
+
+    <p><strong>SU RESERVA INCLUYE:</strong></p>
+    <ul class="included">
+        <li><span class="check green">✔</span>Transporte en Vans climatizada</li>
+        <li><span class="check green">✔</span>Guia certificada</li>
+        <li><span class="check green">✔</span>Mirador de la Popa</li>
+        <li><span class="check green">✔</span>Botas Viejas</li>
+        <li><span class="check green">✔</span>caminata en Getsemani</li></strong>(calles de las banderas, calle  de los paraguas, plaza de la trinidad, calle angosta, grafitis)</p>
+        <li><span class="check green">✔</span>Panoramico Fuerte San Felipe</li>
+        <li><span class="check green">✔</span>Fuerte del Pastelillo</li>
+        <li><span class="check green">✔</span>Letras de Cartagena</li>
+        <li><span class="check green">✔</span>Bahia de Bocagrande</li>
+        <li><span class="check green">✔</span>Ultimo Lugar Cafe del Mar</li>
+
+    </ul>
+
+    <p><strong>NO INCLUYE:</strong></p>
+    <ul class="not-included">
+       
+        <li><span class="check red">✘</span> Entrada Castillo San Felipe</li>
+        <li><span class="check red">✘</span> Entrada Convento de la Popa</li>
+        <li><span class="check red">✘</span> Gastos No Especificados en el plan</li>
+    </ul>
+
+    <p><strong>Hora de salida:</strong> 9:00 AM | <strong>Regreso:</strong> 1:00 PM</p>
+    <p><strong>Hora de salida:</strong> 2:00 PM | <strong>Regreso:</strong> 6:00 PM</p>
+    <p><strong>Valor:</strong> $80,000 COP</p>
+    <p><strong>PARA CONFIRMAR RESERVA:</strong> Se debe realizar un pago parcial de <strong>$25.000</strong> por cada adulto.</p>
+
+    <a href="{{ url_for('reservar', tour='City Tour climatizado') }}"><button>Reservar</button></a>
+</div>
+
+<style>
+    .tour-card {
+        font-family: Arial, sans-serif;
+        max-width: 450px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        background: #fff;
+        box-shadow: 2px 2px 10px rgba(249, 244, 244, 0.1);
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 5px;
+    }
+
+    .check {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .green {
+        color: green;
+    }
+
+    .red {
+        color: red;
+    }
+    
+</style>
+
+<!-- Tour: Volcan del Totumo -->
+<div class="tour-card">
+    <img src="{{ url_for('static', filename='images/volcan_totumo.jpg') }}" alt="Volcan del totumo">
+    <h2>Volcan del Totumo</h2></strong>$160.000 por persona</p>
+    <p>Explora la ciudad con nuestros increíbles recorridos turísticos..</p>
+
+    <p><strong>SU RESERVA INCLUYE:</strong></p>
+    <ul class="included">
+        <li><span class="check green">✔</span>Transporte en bus Climatizado</li>
+        <li><span class="check green">✔</span>Recogida en hotel</li></strog>(Bocagrande, laguito,castillo grande, Marbella)</p>
+        <li><span class="check green">✔</span>Guia Profesional</li>
+        <li><span class="check green">✔</span>Ingreso al Volcan del Totumo</li>
+        <li><span class="check green">✔</span>Ingreso al Mar Rosado</li></strong>aplica para algunas epocas del año</p>
+        <li><span class="check green">✔</span>Almuerzo tipico</li></strong>(Opción: Pollo o Pescad, Arroz de Coco, Patacón, Ensalada</p>
+        <li><span class="check green">✔</span>sillas</li>
+        <li><span class="check green">✔</span>Asoleadoras</li>
+        <li><span class="check green">✔</span>Hamacas</li>
+        
+    </ul>
+
+    <p><strong>NO INCLUYE:</strong></p>
+    <ul class="not-included">
+        <li><span class="check red">✘</span> Gastos No Especificados en el plan</li>
+    </ul>
+
+    <p><strong>Hora de salida:</strong> 8:00 PM | <strong>Regreso:</strong> 11:00 PM</p>
+    <p><strong>Valor:</strong> $160,000 COP</p>
+    <p><strong>PARA CONFIRMAR RESERVA:</strong> Se debe realizar un pago parcial de <strong>$60.000</strong> por cada adulto.</p>
+
+    <a href="{{ url_for('reservar', tour='Volca del Totumo') }}"><button>Reservar</button></a>
+</div>
+
+<style>
+    .tour-card {
+        font-family: Arial, sans-serif;
+        max-width: 450px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        background: #fff;
+        box-shadow: 2px 2px 10px rgba(249, 244, 244, 0.1);
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 5px;
+    }
+
+    .check {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .green {
+        color: green;
+    }
+
+    .red {
+        color: red;
+    }
+    
+</style>
+
+<!-- Tour: City Tour Santa Marta -->
+<div class="tour-card">
+    <img src="{{ url_for('static', filename='images/city_barranquilla_santa_marta.jpg') }}" alt="City Tour en Chiva">
+    <h2>City Tour Santa Marta</h2></strong>$300.000 por persona</p>
+    <p>Explora la ciudad con nuestros increíbles recorridos turísticos..</p>
+
+    <p><strong>SU RESERVA INCLUYE:</strong></p>
+    <ul class="included">
+        <li><span class="check green">✔</span>Transporte en bus Climatizado</li>
+        <li><span class="check green">✔</span>Recogida en hotel</li></strog>(Bocagrande, laguito,castillo grande, Marbella)</p>
+        <li><span class="check green">✔</span>Guia Profesional</li>
+        <li><span class="check green">✔</span>Panoranico por Barranquilla</li>
+        <li><span class="check green">✔</span>Letrras de Barranquila</li>
+        <li><span class="check green">✔</span>ventana del Mundo</li>
+        <li><span class="check green">✔</span>Malecon Hombre Caiman</li>
+        <li><span class="check green">✔</span>Puente Pumarejo</li>
+        <li><span class="check green">✔</span>Recorrido ciudad Santa Marta</li>
+        <li><span class="check green">✔</span>Monumento al pibe</li>
+        <li><span class="check green">✔</span>Parque Bolivar</li>
+        <li><span class="check green">✔</span>Catedral Basilica</li>
+        <li><span class="check green">✔</span>Parque de los Novios</li>
+        <li><span class="check green">✔</span>Calles Coloniales</li>
+        <li><span class="check green">✔</span>Bahia de Santa Marta</li>
+        <li><span class="check green">✔</span>Almuerzo Tipico</li>
+        <li><span class="check green">✔</span>Rodadero 3 horas de Playa</li>
+    </ul>
+
+    <p><strong>NO INCLUYE:</strong></p>
+    <ul class="not-included">
+        <li><span class="check red">✘</span> Gastos No Especificados en el plan</li>
+    </ul>
+
+    <p><strong>Hora de salida:</strong> 4:15 AM | <strong>Regreso:</strong> 6:00 PM</p>
+    
+    <p><strong>Valor:</strong> $300,000 COP</p>
+    <p><strong>PARA CONFIRMAR RESERVA:</strong> Se debe realizar un pago parcial de <strong>$100.000</strong> por cada adulto.</p>
+
+    <a href="{{ url_for('reservar', tour='City Tour Santa Marta') }}"><button>Reservar</button></a>
+</div>
+
+<style>
+    .tour-card {
+        font-family: Arial, sans-serif;
+        max-width: 450px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        background: #fff;
+        box-shadow: 2px 2px 10px rgba(249, 244, 244, 0.1);
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 5px;
+    }
+
+    .check {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .green {
+        color: green;
+    }
+
+    .red {
+        color: red;
+    }
+    
+</style>
+
+
+
+<!-- Sección: ¿Sabías que? City Tour con animación -->
+<style>
+    .sabias-que {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        padding: 3rem 1rem;
+        background-color: #f0f8ff;
+        border-radius: 20px;
+        margin: 3rem 0;
+        flex-wrap: wrap;
+    }
+
+    .sabias-que img {
+        width: 100%;
+        max-width: 450px;
+        border-radius: 15px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .sabias-que-texto {
+        max-width: 600px;
+    }
+
+    .sabias-que-texto h2 {
+        font-size: 2rem;
+        color: #005b8f;
+        margin-bottom: 1rem;
+    }
+
+    .sabias-que-texto p {
+        font-size: 1.1rem;
+        line-height: 1.7;
+        color: #333;
+    }
+
+    @media screen and (max-width: 768px) {
+        .sabias-que {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+</style>
+
+<div class="sabias-que" data-aos="fade-up" data-aos-duration="1000">
+    <img src="{{ url_for('static', filename='images/sabias_que_citytour.jpg') }}" alt="City Tour en Chiva Cartagena" data-aos="fade-right" data-aos-delay="200">
+    <div class="sabias-que-texto" data-aos="fade-left" data-aos-delay="400">
+        <h2>¿Sabías que?</h2>
+        <p>
+            El City Tour en Chiva no es solo un recorrido turístico, ¡es una verdadera fiesta sobre ruedas! 🥳🎶
+            Esta tradicional chiva colorida es símbolo de la cultura costeña y una forma alegre de recorrer
+            los sitios históricos más emblemáticos de Cartagena, como el Castillo San Felipe, la Ciudad Amurallada
+            y Las Bóvedas. 
+            Además, va acompañada de música en vivo, animadores y bebidas típicas para vivir la historia... ¡al ritmo de la alegría caribeña! 🚌🎺
+        </p>
+    </div>
+</div>
+
+
+
+{% endblock %}

@@ -1,0 +1,614 @@
+{% extends "base.html" %}
+
+{% block title %}Islas del Rosario - Agencia de Tours{% endblock %}
+{% block fondo %}fondo-rosario{% endblock %}
+
+{% block content %}
+    <div class="hero-rosario">
+        <div class="hero-text">
+            <h1>Explora las Maravillas de Islas del Rosario</h1>
+            <p>Disfruta de un paraíso tropical con aguas cristalinas y experiencias inolvidables.</p>
+        </div>
+    </div>
+
+    <!-- Sección de tours disponibles -->
+    <section class="tours">
+        <h2>Tours Disponibles</h2>
+        <div class="tour-grid">
+
+           <!-- Tour: Bora Bora beach Club -->
+<div class="tour-card">
+    <img src="{{ url_for('static', filename='images/bora_bora.jpg') }}" alt="Bora Bora Club">
+    <h2>Bora Bora Beach Club</h2></strong>$370.000 por persona</p>
+    <p>🌴 Disfruta de un exclusivo club de playa con servicio premium.</p>
+
+    <p><strong>SU RESERVA INCLUYE:</strong></p>
+    <ul class="included">
+        <li><span class="check green">✔</span> Transporte  en embarcación rápida</li>
+        <li><span class="check green">✔</span> Cóctel de bienvenida sin alcohol</li>
+        <li><span class="check green">✔</span> Cama balinesa (segunda fila)</li>
+        <li><span class="check green">✔</span> Almuerzo Típico (Pollo a la plancha, pescado frito o pasta con vegetales salteados)</li>
+        <li><span class="check green">✔</span> Uso de las instalaciones (excepto habitaciones)</li>
+    </ul>
+
+    <p><strong>NO INCLUYE:</strong></p>
+    <ul class="not-included">
+        <li><span class="check red">✘</span> Transporte hotel-muelle-hotel</li>
+        <li><span class="check red">✘</span> Impuesto del muelle ($29.000 COP)</li>
+        <li><span class="check red">✘</span> Seguro de viaje ($5.000 COP)</li>
+        <li><span class="check red">✘</span> Alimentos y bebidas a la carta</li>
+        <li><span class="check red">✘</span> Toallas y actividades opcionales (Spa, etc.)</li>
+    </ul>
+
+    <p><strong>Hora de salida:</strong> 8:30 AM | <strong>Regreso:</strong> 3:30 PM</p>
+    <p><strong>Valor:</strong> $370,000 COP</p>
+    <p><strong>PARA CONFIRMAR RESERVA:</strong> Se debe realizar un pago total de <strong>$370.000</strong> por cada adulto.</p>
+
+    <a href="{{ url_for('reservar', tour='Bora Bora Club') }}"><button>Reservar</button></a>
+</div>
+
+<style>
+    .tour-card {
+        font-family: Arial, sans-serif;
+        max-width: 450px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        background: #fff;
+        box-shadow: 2px 2px 10px rgba(249, 244, 244, 0.1);
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 5px;
+    }
+
+    .check {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .green {
+        color: green;
+    }
+
+    .red {
+        color: red;
+    }
+    
+</style>
+
+
+  
+
+  <!-- Tour: Bora Bora Vip -->
+  <div class="tour-card">
+    <img src="{{ url_for('static', filename='images/bora_bora_vip.jpg') }}" alt="Bora Bora Club">
+    <h2>Bora Bora Area Vip</h2></strong>$470.000 por persona</p>
+    
+    <p>✨ Vive la experiencia VIP con zonas privadas y atención exclusiva.</p>
+
+    <p><strong>SU RESERVA INCLUYE:</strong></p>
+    <ul class="included">
+        <li><span class="check green">✔</span> Transporte en embarcación rápida</li>
+        <li><span class="check green">✔</span> Cóctel de bienvenida sin alcohol</li>
+        <li><span class="check green">✔</span> Cama balinesa (segunda fila)</li>
+        <li><span class="check green">✔</span> Almuerzo Típico (Pollo a la plancha, pescado frito o pasta con vegetales salteados)</li>
+        <li><span class="check green">✔</span> Uso de las instalaciones (excepto habitaciones)</li>
+    </ul>
+
+    <p><strong>NO INCLUYE:</strong></p>
+    <ul class="not-included">
+        <li><span class="check red">✘</span> Transporte hotel-muelle-hotel</li>
+        <li><span class="check red">✘</span> Impuesto del muelle ($29.000 COP)</li>
+        <li><span class="check red">✘</span> Seguro de viaje ($5.000 COP)</li>
+        <li><span class="check red">✘</span> Alimentos y bebidas a la carta</li>
+        <li><span class="check red">✘</span> Toallas y actividades opcionales (Spa, etc.)</li>
+    </ul>
+
+    <p><strong>Hora de salida:</strong> 8:30 AM | <strong>Regreso:</strong> 3:30 PM</p>
+    <p><strong>Valor:</strong> $470,000 COP</p>
+    <p><strong>PARA CONFIRMAR RESERVA:</strong> Se debe realizar un pago total de <strong>$470.000</strong> por cada adulto.</p>
+
+    <a href="{{ url_for('reservar', tour='Bora Bora Vip') }}"><button>Reservar</button></a>
+</div>
+
+<style>
+    .tour-card {
+        font-family: Arial, sans-serif;
+        max-width: 450px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        background: #fff;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 5px;
+    }
+
+    .check {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .green {
+        color: green;
+    }
+
+    .red {
+        color: red;
+    }
+    
+</style>
+
+
+
+           <!-- Tour: Pao Pao -->
+<div class="tour-card">
+    <img src="{{ url_for('static', filename='images/pao_pao.jpg') }}" alt="Pao Pao">
+    <h3>Isla Pao Pao</h3></strong>$370.000 por persona</p>
+    <p>🏝️ Un día relajante en una isla privada con actividades acuáticas.</p>
+
+    <p><strong>SU RESERVA INCLUYE:</strong></p>
+    <ul class="incluye">
+        <li>Transporte en embarcación rápida</li>
+        <li>Coctel de bienvenida</li>
+        <li>Almuerzo Típico (5 opciones)</li>
+        <li>Uso de las instalaciones (excepto habitaciones)</li>
+        <li>Piscinas</li>
+        <li>Solo para mayores de 18 años</li>
+    </ul>
+
+    <p><strong>NO INCLUYE:</strong></p>
+    <ul class="no-incluye">
+        <li>Impuesto del muelle ($29.000 COP)</li>
+        <li>Seguro de viaje ($5.000 COP)</li>
+        <li>Asistencia médica en caso de eventualidad o accidentes</li>
+        <li>Traslado en ambulancia marítima</li>
+        <li>Alimentos y bebidas a la carta</li>
+        <li>Espacios preferenciales no contratados</li>
+        <li>Spa</li>
+    </ul>
+
+    <p><strong>Hora de salida:</strong> 8:30 AM | <strong>Regreso:</strong> 4:00 PM</p>
+    <p><strong>Valor:</strong> $370,000 COP</p>
+    <p><strong>PARA CONFIRMAR RESERVA:</strong> se debe realizar un pago total de <strong>$370.000</strong> por cada adulto.</p>
+
+    <a href="{{ url_for('reservar', tour='Pao Pao') }}"><button>Reservar</button></a>
+</div><style>
+    .tour-card {
+        font-family: Arial, sans-serif;
+        max-width: 450px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        background: #fff;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 5px;
+    }
+
+    .check {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .green {
+        color: green;
+    }
+
+    .red {
+        color: red;
+    }
+    
+</style>
+<!-- Estilo para ✔ y ✘ -->
+<style>
+    ul.incluye, ul.no-incluye {
+        padding: 0;
+        margin: 0 0 1em 0;
+    }
+
+    ul.incluye li, ul.no-incluye li {
+        list-style: none;
+        padding-left: 1.8em;
+        position: relative;
+        margin-bottom: 0.4em;
+        font-size: 1rem;
+    }
+
+    ul.incluye li::before {
+        content: "✔";
+        position: absolute;
+        left: 0;
+        color: green;
+        font-weight: bold;
+    }
+
+    ul.no-incluye li::before {
+        content: "✘";
+        position: absolute;
+        left: 0;
+        color: red;
+        font-weight: bold;
+    }
+</style>
+
+<!-- Tour: top 3 Islas -->
+<div class="tour-card">
+    <img src="{{ url_for('static', filename='images/top_3_islas.jpg') }}" alt="top 3 Islas">
+    <h3>top 3 Islas</h3></strong>$420.000 por persona</p>
+    <p>🚤 Un recorrido por las tres islas más espectaculares del Caribe, una visita guiada a Pao Pao, Islabela y Bora Bora Beach Club.</p>
+
+    <p><strong>SU RESERVA INCLUYE:</strong></p>
+    <ul class="incluye">
+        <li>Transporte en embarcación rápida</li>
+        <li>Guía billigüe</li>
+        <li>Tour panorámico islas del Rosario</li>
+        <li>1 Cóctel de bienvenida en cada Isla</li>
+        <li>Isla Pao Pao</li>
+        <li>Islabela</li>
+        <li>Isla Bora Bora</li>
+        <li>hidratacion en Lancha(agua)</li>
+        <li>Almuerzo (3 opciones)</li>
+        <li>Uso de las instalaciones (NO habitaciones)</li>
+        <li>Piscinas</li>
+        <li>Solo para mayores de 18 años</li>
+    </ul>
+
+    <p><strong>NO INCLUYE:</strong></p>
+    <ul class="no-incluye">
+        <li>Impuesto del muelle ($29.000 COP)</li>
+        <li>Seguro de viaje ($5.000 COP)</li>
+        <li>Alimentos y bebidas a la carta</li>
+        <li>Espacios vip no contratados</li>
+        <li>Spa</li>
+    </ul>
+
+    <p><strong>Hora de salida:</strong> 8:30 AM | <strong>Regreso:</strong> 4:00 PM</p>
+    <p><strong>Valor:</strong> $420,000 COP</p>
+    <p><strong>PARA CONFIRMAR RESERVA:</strong> se debe realizar un pago total de <strong>$420.000</strong> por cada adulto.</p>
+    <a href="{{ url_for('reservar', tour='top 3 Islas') }}"><button>Reservar</button></a>
+</div>
+
+
+            <!-- Tour: Mangata -->
+<div class="tour-card">
+    <img src="{{ url_for('static', filename='images/mangata.jpg') }}" alt="Mangata">
+    <h3>Mangata</h3></strong>$380.000 por persona</p>
+    <p>🌅 Relájate en un entorno paradisíaco con playas privadas y cabañas.</p>
+
+    <p><strong>SU RESERVA INCLUYE:</strong></p>
+    <ul class="incluye">
+        <li>Transporte en embarcación rápida</li>
+        <li>Guía Acompañante</li>
+        <li>Copa de champaña</li>
+        <li>Cama o silla Asoleadora</li>
+        <li>Tour panorámico islas del Rosario</li>
+        <li> Almuerzo a la carta</li>
+        <li>Dj</li>
+        <li>Islabela</li>
+        <li>Uso de kayaks</li>
+        <li>Uso Paddleboards</li>
+        <li>Snorkel</li>
+        <li>Uso de las instalaciones</li>
+        <li>Duchas agua dulce</li>
+        <li>Servicio de toallas</li>
+        <li>Salida muelle Todomar</li>
+    </ul>
+
+    <p><strong>NO INCLUYE:</strong></p>
+    <ul class="no-incluye">
+        
+        <li>Seguro de viaje ($5.000 COP)</li>
+        <li>Alimentos y bebidas a la carta</li>
+        <li>Espacios vip no contratados</li>
+        <li>Spa</li>
+    </ul>
+
+    <p><strong>Hora de salida:</strong> 8:30 AM | <strong>Regreso:</strong> 4:00 PM</p>
+    <p><strong>Valor:</strong> $380,000 COP</p>
+    <p><strong>PARA CONFIRMAR RESERVA:</strong> se debe realizar un pago total de <strong>$380.000</strong> por cada adulto.</p>
+    <a href="{{ url_for('reservar', tour='Mangata') }}"><button>Reservar</button></a>
+</div>
+
+               <!-- Tour: Sol Y Papaya Open Bar -->
+<div class="tour-card">
+    <img src="{{ url_for('static', filename='images/sol.jpg') }}" alt="Sol y Papaya Open Bar">
+    <h3>Sol Y Papaya Open Bar</h3></strong>$430.000 por persona</p>
+    <p>🌅  Disfruta de la tranquilidad y el lujo en alguna de nuestras islas privadas..</p>
+
+    <p><strong>SU RESERVA INCLUYE:</strong></p>
+    <ul class="incluye">
+        <li>Transporte en embarcación rápida</li>
+        <li>Guía Acompañante</li>
+        <li>Coctel de Bienvenida</li>
+        <li>Canasta de Platano y pollo</li>
+        <li>Tour panorámico islas del Rosario</li>
+        <li> Almuerzo a la carta</li>
+        <li>Postre de la casa</li>
+        <li>Open Bar: mojito classic</li>
+        <li>Cuba libre</li>
+        <li>Margarita classic</li>
+        <li>Caipiroska classic</li>
+        <li>Uso de las instalaciones</li>
+        <li>Dj en vivo</li>
+        <li>Atancion Perrsonalizada</li>
+    </ul>
+
+    <p><strong>NO INCLUYE:</strong></p>
+    <ul class="no-incluye">
+        <li>Impuesto del muelle ($29.000 COP)</li>
+        <li>Seguro de viaje ($5.000 COP)</li>
+        <li>Alimentos y bebidas a la carta</li>
+        <li>Espacios vip no contratados</li>
+        <li>Spa</li>
+    </ul>
+
+    <p><strong>Hora de salida:</strong> 8:30 AM | <strong>Regreso:</strong> 4:00 PM</p>
+    <p><strong>Valor:</strong> $430,000 COP</p>
+    <p><strong>PARA CONFIRMAR RESERVA:</strong> se debe realizar un pago total de <strong>$430.000</strong> por cada adulto.</p>
+    <a href="{{ url_for('reservar', tour='Sol Y Papaya Open Bar') }}"><button>Reservar</button></a>
+</div>
+
+<!-- Tour: Sol Y Papaya Classic Day -->
+<div class="tour-card">
+    <img src="{{ url_for('static', filename='images/sol1.jpg') }}" alt="Sol y Papaya Cassic Day">
+    <h3>Sol Y Papaya Classic Day</h3></strong>$330.000 por persona</p>
+    <p>🌅  Disfruta de la tranquilidad y el lujo en alguna de nuestras islas privadas..</p>
+
+    <p><strong>SU RESERVA INCLUYE:</strong></p>
+    <ul class="incluye">
+        <li>Transporte en embarcación rápida</li>
+        <li>Guía Acompañante</li>
+        <li>Coctel de Bienvenida</li>
+        <li>Canasta de Platano y pollo</li>
+        <li>Tour panorámico islas del Rosario</li>
+        <li> Almuerzo Estilo Buffet</li>
+        <li>Postre de la casa</li>
+        <li>Menu infantil</li>
+        <li>Uso de las instalaciones</li>
+        <li>Dj en vivo</li>
+    </ul>
+
+    <p><strong>NO INCLUYE:</strong></p>
+    <ul class="no-incluye">
+        <li>Impuesto del muelle ($29.000 COP)</li>
+        <li>Seguro de viaje ($5.000 COP)</li>
+        <li>Alimentos y bebidas a la carta</li>
+        <li>Espacios vip no contratados</li>
+        <li>Spa</li>
+    </ul>
+
+    <p><strong>Hora de salida:</strong> 8:30 AM | <strong>Regreso:</strong> 4:00 PM</p>
+    <p><strong>Valor:</strong> $330,000 COP</p>
+    <p><strong>PARA CONFIRMAR RESERVA:</strong> se debe realizar un pago total de <strong>$330.000</strong> por cada adulto.</p>
+    <a href="{{ url_for('reservar', tour='Sol Y Papaya Classic Day') }}"><button>Reservar</button></a>
+</div>
+
+             <!-- Tour: Isla Lizamar -->
+<div class="tour-card">
+    <img src="{{ url_for('static', filename='images/lizamar.jpg') }}" alt="Isla Lizamar">
+    <h3>Isla Lizamar</h3></strong>$350.000 por persona</p>
+    <p>🌅 Relájate en un entorno paradisíaco con playas privadas y cabañas.</p>
+
+    <p><strong>SU RESERVA INCLUYE:</strong></p>
+    <ul class="incluye">
+        <li>Transporte en embarcación rápida</li>
+        <li>Guía Acompañante</li>
+        <li>Copa de champaña</li>
+        <li>Cama o silla Asoleadora</li>
+        <li>Tour panorámico islas del Rosario</li>
+        <li> Almuerzo Estilo Buffet</li>
+        <li>Snorkel(actividad opcional)</li>
+        <li>Oceanario(actividad opcional)</li>
+        <li>Uso de kayaks</li>
+        <li>sillas playeras</li>
+        <li>Piscinas</li>
+        <li>Uso de las instalaciones</li>
+        <li>Tobogan salida al mar</li>
+        <li>Parque infantil</li>
+        <li>Piscina niños</li>
+        <li>Seguro de Asistencia</li>
+    </ul>
+
+    <p><strong>NO INCLUYE:</strong></p>
+    <ul class="no-incluye">
+        <li>Impuesto del muelle ($29.000 COP)</li>
+        <li>Seguro de viaje ($5.000 COP)</li>
+        <li>Alimentos y bebidas a la carta</li>
+        <li>Espacios vip no contratados</li>
+        <li>Spa</li>
+    </ul>
+
+    <p><strong>Hora de salida:</strong> 8:30 AM | <strong>Regreso:</strong> 4:00 PM</p>
+    <p><strong>Valor:</strong> $350,000 COP</p>
+    <p><strong>PARA CONFIRMAR RESERVA:</strong> se debe realizar un pago total de <strong>$350.000</strong> por cada adulto.</p>
+    <a href="{{ url_for('reservar', tour='Isla Lizamar') }}"><button>Reservar</button></a>
+</div>
+
+<!-- Tour: Mucura Tintipan -->
+<div class="tour-card">
+    <img src="{{ url_for('static', filename='images/mucura.jpg') }}" alt="Mucura Tintipan">
+    <h3>Mucura Tintipan</h3></strong>$300.000 por persona</p>
+    <p>🌅  Disfruta de la tranquilidad y el lujo en alguna de nuestras islas privadas..</p>
+
+    <p><strong>SU RESERVA INCLUYE:</strong></p>
+    <ul class="incluye">
+        <li>Transporte en embarcación rápida</li>
+        <li>Guía Acompañante</li>
+        <li>Snack AM antes de embarque</li>
+    </strong>(sándwich, bebida o ensalada de frutas).</p>
+        <li>Tour panorámico islas del Rosario</li>
+    </strong>y Archipielagos.</p>
+        <li>PARADA 1: ISLA TINTIPAN</li>
+    </strong>(tiempo en la isla de 1 horas aprox).</p>
+        <li>PARADA 2: CASA EN EL AGUA</li></strong>solo panoramico.</p>
+        <li>PARADA 3: ISLOTE SANTA CRUZ</li></strong> la isla mas pequeña y mas densamente poblada de la tierra, donde encontrará un Oceanario artesanal (no incluye el costo de ingreso).</p>
+        <li>PARADA 4: ISLA MUCURA</li></strong>(Coctel de Bienvenida).</p>
+        <li>Almuerzo Tipico</li>
+    </strong>(Arroz con coco, Pescado o pollo, Ensalada y su bebida acompañante).</p>
+    
+    </ul>
+
+    <p><strong>NO INCLUYE:</strong></p>
+    <ul class="no-incluye">
+        <li>Impuesto del muelle ($29.000 COP)</li>
+        <li>Seguro de viaje ($5.000 COP)</li>
+        <li>Alimentos y bebidas a la carta</li>
+        <li>Espacios vip no contratados</li>
+        <li>Spa</li>
+    </ul> 
+    
+    <p><strong>Hora de salida:</strong> 8:30 AM | <strong>Regreso:</strong> 4:00 PM</p>
+    <p><strong>Valor:</strong> $300,000 COP</p>
+    <p><strong>PARA CONFIRMAR RESERVA:</strong> se debe realizar un pago total de <strong>$300.000</strong> por cada adulto.</p>
+    <a href="{{ url_for('reservar', tour='Mucura Tintipan') }}"><button>Reservar</button></a>
+</div>
+           
+
+        <!-- Sección: ¿Sabías que? Islas del Rosario -->
+
+<style>
+    .sabias-que {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        padding: 3rem 1rem;
+        background-color: #f0f8ff;
+        border-radius: 20px;
+        margin: 3rem 0;
+        flex-wrap: wrap;
+    }
+
+    .sabias-que img {
+        width: 100%;
+        max-width: 450px;
+        border-radius: 15px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .sabias-que-texto {
+        max-width: 600px;
+    }
+
+    .sabias-que-texto h2 {
+        font-size: 2rem;
+        color: #005b8f;
+        margin-bottom: 1rem;
+    }
+
+    .sabias-que-texto p {
+        font-size: 1.1rem;
+        line-height: 1.7;
+        color: #333;
+    }
+
+    @media screen and (max-width: 768px) {
+        .sabias-que {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+</style>
+
+
+<!-- Sección Sabías que - Islas del Rosario -->
+<section class="sabias-que" style="display: flex; align-items: center; gap: 2rem; padding: 2rem;">
+    <!-- Imagen con animación -->
+    <img 
+        src="{{ url_for('static', filename='images/sabias_que_rosario.jpg') }}" 
+        alt="Islas del Rosario" 
+        style="width: 50%; border-radius: 15px;"
+        data-aos="fade-right"
+    >
+
+    <!-- Texto con animación -->
+    <div style="width: 50%;" data-aos="fade-left">
+        <h2 style="color: #2c3e50;">¿Sabías que?</h2>
+        <p style="font-size: 1.1rem; line-height: 1.6;">
+            Las Islas del Rosario son un archipiélago conformado por 27 islas, y forman parte del Parque Nacional Natural Corales del Rosario y San Bernardo. Este paraíso caribeño alberga uno de los arrecifes coralinos más importantes del país, ideal para el snorkel y el buceo. ¡Además, puedes encontrar hasta una avioneta sumergida que perteneció al cartel de Pablo Escobar!
+        </p>
+    </div>
+</section>
+
+  <style>
+    .sabias-que {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      padding: 2rem;
+      border-radius: 20px;
+      flex-wrap: wrap;
+      margin: 2rem 0;
+    }
+  
+    .sabias-que img,
+    .sabias-que div {
+      flex: 1 1 45%;
+    }
+  
+    .sabias-que img {
+      width: 100%;
+      border-radius: 15px;
+    }
+  
+    .rosario {
+      background: url("{{ url_for('static', filename='images/fondo_rosario.jpg') }}") no-repeat center center;
+      background-size: cover;
+      color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    }
+  
+    .rosario p {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 1.5rem;
+      border-radius: 12px;
+      line-height: 1.6;
+    }
+  
+    @media (max-width: 768px) {
+      .sabias-que {
+        flex-direction: column;
+        text-align: center;
+      }
+  
+      .sabias-que img,
+      .sabias-que div {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+  
+
+
+
+{% endblock %}

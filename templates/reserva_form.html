@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservar Tour</title>
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+
+<!-- Formulario de reserva separado -->
+{% extends "base.html" %}
+
+{% block title %}Reservas - Mi Agencia{% endblock %}
+{% block fondo %}fondo-reservas{% endblock %}
+{% block content %}
+
+<h1>Reserva tu Tour</h1>
+
+<form action="/procesar_reserva" method="POST">
+    <label for="nombre">Nombre y Apellidos:</label>
+    <input type="text" id="nombre" name="nombre" required><br>
+
+    <label for="cedula">Cedula:</label>
+    <input type="tel" id="cedula" name="cedula" required><br>
+
+    <label for="celular">Celular:</label>
+    <input type="tel" id="celular" name="celular" required><br>
+
+    <label for="celular">Celular:</label>
+    <input type="tel" id="celular" name="celular" required><br>
+
+    <label for="celular">Hotel:</label>
+    <input type="text" id="hotel" name="hotel" required><br>
+
+    <label for="tour">Tour Seleccionado:</label>
+    <input type="text" id="tour" name="tour" value="{{ tour }}" readonly><br>
+
+    <label for="fecha">Fecha del Tour:</label>
+    <input type="date" id="fecha" name="fecha" required><br>
+
+    <label for="cantidad">Cantidad de personas:</label>
+    <input type="number" id="cantidad" name="cantidad" required><br>
+
+    <button type="submit">Confirmar Reserva</button>
+</form>
+
+{% endblock %}
+
+
+<script>
+    function enviarWhatsApp() {
+        let nombre = document.getElementById("nombre").value;
+        let email = document.getElementById("email").value;
+        let telefono = document.getElementById("telefono").value;
+        let hotel = document.getElementById("hotel").value;
+        let fecha = document.getElementById("fecha").value;
+        let tour = document.getElementById("tour").value;
+
+        let numeroWhatsApp = "573125680394";  // Reemplaza con tu número
+
+        let mensaje = `Hola, quiero reservar un tour:\n\n` +
+                      `📌 *Nombre:* ${nombre}\n` +
+                      `📧 *Correo:* ${email}\n` +
+                      `📞 *Teléfono:* ${telefono}\n` +
+                      `🏨 *Hotel:* ${hotel}\n` +
+                      `📅 *Fecha:* ${fecha}\n` +
+                      `🎟️ *Tour:* ${tour}`;
+
+        let url = `https://api.whatsapp.com/send?phone=${numeroWhatsApp}&text=${encodeURIComponent(mensaje)}`;
+
+        window.open(url, "_blank");
+    }
+</script>
+
+</body>
+</html>

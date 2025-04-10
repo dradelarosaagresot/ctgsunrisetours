@@ -1,0 +1,1042 @@
+{% extends "base.html" %}
+
+{% block title %}Tours en Playa Blanca Barú{% endblock %}
+{% block fondo %}fondo-baru{% endblock %}
+
+{% block content %}
+<div class="hero-baru">
+    <div class="hero-text">
+         <h1>Descubre nuestros tours en Playa Blanca Barú</h1>
+    </strong>Disfruta de un paraíso tropical con aguas cristalinas y experiencias inolvidables.</p>
+    </div>
+</div>
+    
+    
+    
+    <div class="tours-container">
+   
+      <!-- Playa Blanca Barú -->
+<div class="tour-card">
+    <img src="{{ url_for('static', filename='tours/playa_blanca.jpg') }}" alt="Playa Blanca Barú">
+    <h2>Playa Blanca Barú</h2></strong>$60.000 por persona</p>
+    <p><strong>SU RESERVA INCLUYE:</strong></p>
+    <ul class="included">
+        <li><span class="check green">✔</span> Recogida en hotel (algunas zonas)</li>
+        <li><span class="check green">✔</span> Transporte en bus climatizado</li>
+        <li><span class="check green">✔</span> Guía Profesional</li>
+        <li><span class="check green">✔</span> Día de sol en Playa Blanca</li>
+        <li><span class="check green">✔</span> Almuerzo Típico</li></strong>(Arroz de Coco, Patacón, Ensalada, Opción Pollo o Pescado, limonada pequeña)</p>
+    </ul>
+    <p><strong>NO INCLUYE:</strong></p>
+    <ul class="not-included">
+        <li><span class="check red">✘</span> Carpas, sillas parasoles</li>
+        <li><span class="check red">✘</span> Gastos no especificados en el plan</li>
+    </ul>
+    <p><strong>Valor:</strong> $60,000 COP</p>
+    <p><strong>PARA CONFIRMAR RESERVA:</strong> Se debe realizar un pago parcial de <strong>$10.000</strong> por cada persona.</p>
+    <p><strong>Lugar de recogida:</strong> Hotel o punto acordado</p>
+    <p><strong>Hora de salida:</strong> 7:30 AM</p>
+    <p><strong>Hora de llegada:</strong> 3:00 PM</p>
+   
+
+    <a href="/reserva?tour=Playa%20Blanca%20Barú"><button>Reservar</button></a>
+</div>
+<style>
+    .tour-card {
+        font-family: Arial, sans-serif;
+        max-width: 400px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        background: #fff;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 5px;
+    }
+
+    .check {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .green {
+        color: green;
+    }
+
+    .red {
+        color: red;
+    }
+</style>
+
+        <!-- Oceanario -->
+<div class="tour-card">
+    <img src="{{ url_for('static', filename='tours/oceanario.jpg') }}" alt="Oceanario">
+    <h2>Oceanario</h2></strong>$90.000 por persona</p>
+    <p><strong>SU RESERVA INCLUYE:</strong></p>
+    <ul class="included">
+        <li><span class="check green">✔</span> Recogida en hotel (algunas zonas)</li>
+        <li><span class="check green">✔</span> Transporte en bus climatizado</li>
+        <li><span class="check green">✔</span> Transporte en lancha rápida</li>
+        <li><span class="check green">✔</span> Panoramico por Islas del Rosario</li>
+        <li><span class="check green">✔</span> Parada en isla San Martín de Pajarales</li></strong>(Oceanario entrada es adicional)</p>
+        <li><span class="check green">✔</span> Día de sol en Playa Blanca</li>
+        <li><span class="check green">✔</span> Almuerzo típico</li></strong>(Arroz de Coco, Patacón, Ensalada, Opción Pollo o Pescado, limonada pequeña)</p>
+    </ul>
+    <p><strong>NO INCLUYE:</strong></p>
+    <ul class="not-included">
+        <li><span class="check red">✘</span> Entrada al Oceanario</li>
+        <li><span class="check red">✘</span> Carpas, sillas, parasoles</li>
+        <li><span class="check red">✘</span> Gastos no especificados en el plan</li>
+    </ul>
+    <p><strong>Valor:</strong> $90,000 COP</p>
+    <p><strong>PARA CONFIRMAR RESERVA:</strong> Se debe realizar un pago parcial de <strong>$20.000</strong> por cada persona.</p>
+    <p><strong>Lugar de recogida:</strong> Hotel o punto acordado</p>
+    <p><strong>Hora de salida:</strong> 7:30 AM</p>
+    <p><strong>Hora de llegada:</strong> 3:00 PM</p>
+    
+
+    <a href="/reserva?tour=Oceanario"><button>Reservar</button></a>
+</div>
+
+<style>
+    .tour-card {
+        font-family: Arial, sans-serif;
+        max-width: 400px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        background: #fff;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 5px;
+    }
+
+    .check {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .green {
+        color: green;
+    }
+
+    .red {
+        color: red;
+    }
+</style>
+
+ <!-- Islas Del Rosario Maritimo -->
+ <div class="tour-card">
+    <img src="{{ url_for('static', filename='tours/oceanario1.jpg') }}" alt="Islas Del Rosario Maritimo">
+    <h2>Islas Del Rosario Maritimo</h2></strong>$140.000 por persona</p>
+    <p><strong>SU RESERVA INCLUYE:</strong></p>
+    <ul class="included">
+        <li><span class="check green">✔</span> Recogida en hotel- muelle</li></strong>(Bocagrande, Laguito, Castillo Grande)</p>
+        <li><span class="check green">✔</span> Transporte en lancha rapida</li>
+        <li><span class="check green">✔</span> Panoramico por islas del Rosario</li>
+        <li><span class="check green">✔</span> Parada en isla San Martín de Pajarales</li>
+        <li><span class="check green">✔</span> Día de sol en Playa Tranquila</li>
+        <li><span class="check green">✔</span> Almuerzo típico</li></strong>(Arroz de Coco, Patacón, Ensalada, Opción Pollo o Pescado, limonada pequeña)</p>
+    </ul>
+    <p><strong>NO INCLUYE:</strong></p>
+    <ul class="not-included">
+        <li><span class="check red">✘</span> Impuesto Portuario</li> <strong>$29.000</strong> por cada persona.</p>
+        <li><span class="check red">✘</span> Entrada al Oceanario</li> <strong>$40.000</strong> por cada persona.</p>
+        <li><span class="check red">✘</span> Carpas, sillas, parasoles</li>
+        <li><span class="check red">✘</span> Gastos no especificados en el plan</li>
+    </ul>
+    <p><strong>Valor:</strong> $140,000 COP</p>
+    <p><strong>PARA CONFIRMAR RESERVA:</strong> Se debe realizar un pago parcial de <strong>$40.000</strong> por cada persona.</p>
+    <p><strong>Lugar de recogida:</strong> Hotel o punto acordado</p>
+    <p><strong>Hora de salida:</strong> 7:30 AM</p>
+    <p><strong>Hora de llegada:</strong> 3:00 PM</p>
+   
+    <a href="/reserva?tour=islas%20Rosario%20Maritimo"><button>Reservar</button></a>
+</div>
+
+<style>
+    .tour-card {
+        font-family: Arial, sans-serif;
+        max-width: 400px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        background: #fff;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 5px;
+    }
+
+    .check {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .green {
+        color: green;
+    }
+
+    .red {
+        color: red;
+    }
+</style>
+
+
+        <!-- Bajo Tortuga -->
+<div class="tour-card">
+    <img src="{{ url_for('static', filename='tours/bajo_tortuga.jpg') }}" alt="Bajo Tortuga">
+    <h2> Playa Blanca Bajo Tortuga</h2>
+</strong>$120.000 por persona</p>
+    <p><strong>SU RESERVA INCLUYE:</strong></p>
+    <ul class="included">
+        <li><span class="check green">✔</span> Recogida en hotel (algunas zonas)</li>
+        <li><span class="check green">✔</span> Transporte en bus climatizado</li>
+        <li><span class="check green">✔</span> Traslado en lancha rápida por</li></strong>las costas de baru 5 minutos aprox.</p>
+        <li><span class="check green">✔</span> Guía acompañante</li>
+        <li><span class="check green">✔</span> Fotos de todo el recorrido</li>
+        <li><span class="check green">✔</span> Parada en los Manglares e </li></strong>interaccion y fotos con mapaches.</p>
+        <li><span class="check green">✔</span> Parada detrás del hotel Decamerón</li>
+        <li><span class="check green">✔</span> Actividad de snorkel</li>
+        <li><span class="check green">✔</span> Día de sol en Playa Blanca</li>
+        <li><span class="check green">✔</span> Almuerzo típico</li></strong>(Arroz de coco, patacón, ensalada, opción pollo o pescado, limonada pequeña)</p>
+    </ul>
+    <p><strong>NO INCLUYE:</strong></p>
+    <ul class="not-included">
+        <li><span class="check red">✘</span> Carpas, sillas, parasoles</li>
+        <li><span class="check red">✘</span> Gastos no especificados en el plan</li>
+    </ul>
+    <p><strong>Valor:</strong> $120,000 COP</p>
+    <p><strong>PARA CONFIRMAR RESERVA:</strong> Se debe realizar un pago parcial de <strong>$20.000</strong> por cada persona.</p>
+    <p><strong>Lugar de recogida:</strong> Hotel o punto acordado</p>
+    <p><strong>Hora de salida:</strong> 7:30 AM</p>
+    <p><strong>Hora de llegada:</strong> 3:00 PM</p>
+   
+
+    <a href="/reserva?tour=Bajo%20Tortuga"><button>Reservar</button></a>
+</div>
+
+<style>
+    .tour-card {
+        font-family: Arial, sans-serif;
+        max-width: 400px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        background: #fff;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 5px;
+    }
+
+    .check {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .green {
+        color: green;
+    }
+
+    .red {
+        color: red;
+    }
+</style>
+
+        <!-- Aviario -->
+<div class="tour-card">
+    <img src="{{ url_for('static', filename='tours/aviario.jpg') }}" alt="Aviario">
+    <h2>Playa Blanca Aviario</h2></strong>$100.000 por persona</p>
+    <p><strong>SU RESERVA INCLUYE:</strong></p>
+    <ul class="included">
+        <li><span class="check green">✔</span> Recogida en hotel (algunas zonas)</li>
+        <li><span class="check green">✔</span> Transporte en vehículo climatizado</li>
+        <li><span class="check green">✔</span> Estadía en el Aviario de</li></strong> 10:00 AM a 12:00 M aprox</p>
+        <li><span class="check green">✔</span> Traslado a Playa Blanca Barú</li>
+        <li><span class="check green">✔</span> Día de sol en Playa Blanca</li>
+        <li><span class="check green">✔</span> Almuerzo típico</li></strong> (Arroz de coco, patacón, ensalada, opción pollo o pescado)</p>
+    </ul>
+    <p><strong>NO INCLUYE:</strong></p>
+    <ul class="not-included">
+        <li><span class="check red">✘</span> Entrada al Aviario</li>
+        <li><span class="check red">✘</span> Carpas, sillas, parasoles</li>
+        <li><span class="check red">✘</span> Gastos no especificados en el plan</li>
+        <li><span class="check red">✘</span> Parasoles</li>
+    </ul>
+    <p><strong>Valor:</strong> $90,000 COP</p>
+    <p><strong>PARA CONFIRMAR RESERVA:</strong> Se debe realizar un pago parcial de <strong>$20.000</strong> por cada persona.</p>
+    <p><strong>Lugar de recogida:</strong> Hotel o punto acordado</p>
+    <p><strong>Hora de salida:</strong> 7:30 AM</p>
+    <p><strong>Hora de llegada:</strong> 3:00 PM</p>
+    
+
+    <a href="/reserva?tour=Aviario"><button>Reservar</button></a>
+</div>
+
+<style>
+    .tour-card {
+        font-family: Arial, sans-serif;
+        max-width: 400px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        background: #fff;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 5px;
+    }
+
+    .check {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .green {
+        color: green;
+    }
+
+    .red {
+        color: red;
+    }
+</style>
+
+
+        <!-- Playa Tranquila Donde Uriel-->
+<div class="tour-card">
+    <img src="{{ url_for('static', filename='tours/playa_tranquila.jpg') }}" alt="Playa Tranquila Donde Uriel">
+    <h2>Playa Tranquila Donde Uriel</h2></strong>$120.000 por persona</p>
+    
+    <p><strong>SU RESERVA INCLUYE:</strong></p>
+    <ul class="included">
+        <li><span class="check green">✔</span> Recogida en hotel (algunas zonas)</li>
+        <li><span class="check green">✔</span> Transporte en vehículo acondicionado</li>
+        <li><span class="check green">✔</span> Traslado ida y vuelta en lancha rápida</li></strong> a playa tranquila 5 minutos aproxi</p>
+        <li><span class="check green">✔</span> Guía acompañante</li>
+        <li><span class="check green">✔</span> Cóctel de bienvenida</li>
+        <li><span class="check green">✔</span> Camas y sillas</li>
+        <li><span class="check green">✔</span> Día de sol en Barú - Playa Tranquila</li>
+        <li><span class="check green">✔</span> Almuerzo típico </li></strong>(Arroz de coco, patacón, ensalada, opción pollo o pescado)</p>
+    </ul>
+
+    <p><strong>NO INCLUYE:</strong></p>
+    <ul class="not-included">
+        <li><span class="check red">✘</span> Gastos no especificados en el plan</li>
+    </ul>
+
+    <p><strong>Valor:</strong> $120,000 COP</p>
+    <p><strong>PARA CONFIRMAR RESERVA:</strong> Se debe realizar un pago parcial de <strong>$20.000</strong> por cada persona.</p>
+    <p><strong>Lugar de recogida:</strong> Hotel o punto acordado</p>
+    <p><strong>Hora de salida:</strong> 7:30 AM</p>
+    <p><strong>Hora de llegada:</strong> 3:00 PM</p>
+    
+
+    <a href="/reserva?tour=Playa%20Tranquila%20Donde%20Uriel"><button>Reservar</button></a>
+</div>
+
+<style>
+    .tour-card {
+        font-family: Arial, sans-serif;
+        max-width: 400px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        background: #fff;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 5px;
+    }
+
+    .check {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .green {
+        color: green;
+    }
+
+    .red {
+        color: red;
+    }
+</style>
+
+
+        <!-- Playa Tranquila Polo Beach-->
+        <div class="tour-card">
+            <img src="{{ url_for('static', filename='tours/playa_tranquila1.jpg') }}" alt="Playa Tranquila Polo Beach">
+            <h2>Playa Tranquila Polo Beach</h2></strong>$105.000 por persona</p>
+            
+            <p><strong>SU RESERVA INCLUYE:</strong></p>
+            <ul class="included">
+                <li><span class="check green">✔</span> Recogida en hotel (algunas zonas)</li>
+        <li><span class="check green">✔</span> Transporte en vehículo acondicionado</li>
+        <li><span class="check green">✔</span> Traslado ida y vuelta en lancha rápida</li></strong> a playa tranquila 5 minutos aproxi</p>
+        <li><span class="check green">✔</span> Guía acompañante</li>
+        <li><span class="check green">✔</span> Cóctel de bienvenida</li>
+        <li><span class="check green">✔</span> Camas y sillas</li>
+        <li><span class="check green">✔</span> Día de sol en Barú - Playa Tranquila</li>
+        <li><span class="check green">✔</span> Almuerzo típico </li></strong>(Arroz de coco, patacón, ensalada, opción pollo o pescado)</p>
+            </ul>
+        
+            <p><strong>NO INCLUYE:</strong></p>
+            <ul class="not-included">
+                <li><span class="check red">✘</span> Gastos no especificados en el plan</li>
+            </ul>
+        
+            <p><strong>Valor:</strong> $105,000 COP</p>
+            <p><strong>PARA CONFIRMAR RESERVA:</strong> Se debe realizar un pago parcial de <strong>$20.000</strong> por cada persona.</p>
+            <p><strong>Lugar de recogida:</strong> Hotel o punto acordado</p>
+            <p><strong>Hora de salida:</strong> 7:30 AM</p>
+            <p><strong>Hora de llegada:</strong> 3:00 PM</p>
+            
+
+            <a href="/reserva?tour=Playa%20Tranquila%20Polo%20Beach"><button>Reservar</button></a>
+        </div>
+        
+        <style>
+            .tour-card {
+                font-family: Arial, sans-serif;
+                max-width: 400px;
+                padding: 20px;
+                border: 1px solid #ddd;
+                border-radius: 10px;
+                background: #fff;
+                box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            }
+        
+            ul {
+                list-style: none;
+                padding: 0;
+            }
+        
+            li {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                margin-bottom: 5px;
+            }
+        
+            .check {
+                font-weight: bold;
+                font-size: 18px;
+            }
+        
+            .green {
+                color: green;
+            }
+        
+            .red {
+                color: red;
+            }
+        </style>
+
+
+    <!-- Cuatro Islas Vip -->
+<div class="tour-card">
+    <img src="{{ url_for('static', filename='tours/cuatro_islas.jpg') }}" alt="Cuatro Islas Vip">
+    <h2>Cuatro Islas Vip</h2></p>$200.000 por persona</p>
+
+    <p><strong>SU RESERVA INCLUYE:</strong></p>
+    <ul class="included">
+        <li><span class="check green">✔</span> Recogida en hotel (algunas zonas)</li>
+        <li><span class="check green">✔</span> Transporte en climatizado</li>
+        <li><span class="check green">✔</span> Transporte en lancha rápida para</li></strong>recorrido por las Islas del Rosario</p>
+        <li><span class="check green">✔</span> Isla Majayura (Snorkeling)</li>
+        <li><span class="check green">✔</span> Isla de Cholón </li></strong>(un Cóctel de camarones y uso de las instalaciones en agua o tierra)</p>
+        <li><span class="check green">✔</span> Isla Agua Azul </li></strong>(Silla y una hora de playa)</p>
+        <li><span class="check green">✔</span> Isla Baru Playa Tranquila</li></strong> (Uso de las instalaciones, vista del atardecer)</p>
+        <li><span class="check green">✔</span> Almuerzo típico (Dos opciones)</li>
+        <li><span class="check green">✔</span> Snack</li>
+        <li><span class="check green">✔</span> Actividad de Plancton Luminoso</li>
+    </ul>
+
+    <p><strong>NO INCLUYE:</strong></p>
+    <ul class="not-included">
+        <li><span class="check red">✘</span> Entrada al Oceanario</li>
+        <li><span class="check red">✘</span> Gastos no especificados en el plan</li>
+        
+    </ul>
+
+    <p><strong>Valor:</strong> $200,000 COP</p>
+    <p><strong>PARA CONFIRMAR RESERVA:</strong> Se debe realizar un pago parcial de <strong>$20.000</strong> por cada persona.</p>
+    <p><strong>Lugar de recogida:</strong> Hotel o punto acordado</p>
+    <p><strong>Hora de salida:</strong> 7:30 AM</p>
+    <p><strong>Hora de llegada:</strong> 8:00 PM</p>
+    
+
+    <a href="/reserva?tour=Cuatro%20Islas%20Vip"><button>Reservar</button></a>
+</div>
+
+<style>
+    .tour-card {
+        font-family: Arial, sans-serif;
+        max-width: 400px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        background: #fff;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 5px;
+    }
+
+    .check {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .green {
+        color: green;
+    }
+
+    .red {
+        color: red;
+    }
+</style>
+
+ <!-- Cuatro Islas Maritimo -->
+ <div class="tour-card">
+    <img src="{{ url_for('static', filename='images/cuatro_islas1.jpg') }}" alt="Cuatro Islas maritimo">
+    <h2>Cuatro Islas maritimo</h2></strong>$240.000 por persona</p>
+    
+    <p><strong>SU RESERVA INCLUYE:</strong></p>
+    <ul class="included">
+        <li><span class="check green">✔</span> Recogida en hotel (algunas zonas)</li>
+        <li><span class="check green">✔</span> Guia Acompañante</li>
+        <li><span class="check green">✔</span> Transporte en lancha rápida para</li></strong>recorrido por las Islas del Rosario</p>
+        <li><span class="check green">✔</span> Isla Majayura (Snorkeling)</li>
+        <li><span class="check green">✔</span> Isla de Cholón </li></strong>(un Cóctel de camarones y uso de las instalaciones en agua o tierra)</p>
+        <li><span class="check green">✔</span> Isla Agua Azul </li></strong>(Silla y una hora de playa)</p>
+        <li><span class="check green">✔</span> Isla Baru Playa Tranquila</li></strong> (Uso de las instalaciones, vista del atardecer)</p>
+        <li><span class="check green">✔</span> Almuerzo típico (Dos opciones)</li>
+        <li><span class="check green">✔</span> Snack</li>
+        <li><span class="check green">✔</span> Actividad de Plancton Luminoso</li>
+    </ul>
+
+    <p><strong>NO INCLUYE:</strong></p>
+    <ul class="not-included">
+        <li><span class="check red">✘</span> Impuesto Portuario</li>
+        <li><span class="check red">✘</span> Entrada al oceanario</li>
+        <li><span class="check red">✘</span> Gastos no especificados en el plan</li>
+    </ul>
+
+    <p><strong>Valor:</strong> $240,000 COP</p>
+    <p><strong>PARA CONFIRMAR RESERVA:</strong> Se debe realizar un pago parcial de <strong>$40.000</strong> por cada persona.</p>
+    <p><strong>Lugar de recogida:</strong> Hotel o punto acordado</p>
+    <p><strong>Hora de salida:</strong> 8:10 AM</p>
+    <p><strong>Hora de llegada:</strong> 8:00 PM</p>
+    
+
+
+    <a href="/reserva?tour=Cuatro%20Islas%20Maritimo"><button>Reservar</button></a>
+</div>
+
+<style>
+    .tour-card {
+        font-family: Arial, sans-serif;
+        max-width: 400px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        background: #fff;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 5px;
+    }
+
+    .check {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .green {
+        color: green;
+    }
+
+    .red {
+        color: red;
+    }
+</style>
+
+
+    <!-- Cinco Islas Vip -->
+<div class="tour-card">
+    <img src="{{ url_for('static', filename='images/cinco_islas.jpg') }}" alt="Cinco Islas Vip">
+    <h2>Cinco Islas Vip</h2></strong>$320.000 por persona</p>
+    
+    <p><strong>SU RESERVA INCLUYE:</strong></p>
+    <ul class="included">
+        <li><span class="check green">✔</span> Recogida en el hotel hasta muelle de la</li></strong>Bodeguita(bocagrande,laguito,marbella)</p>
+        <li><span class="check green">✔</span> Bote deportivo</li>
+        <li><span class="check green">✔</span> Parada panorámica en el fuerte de</li></strong> Bocachica con explicación histórica</p>
+        <li><span class="check green">✔</span> Panorámico por Islas del Rosario</li>
+        <li><span class="check green">✔</span> Snorkel y explicación sobre la avioneta</li></strong> hundida de Pablo Escobar</p>
+        <li><span class="check green">✔</span> Parada en Isla Cholón con degustación</li></strong>de camarón, uso de las instalaciones en agua y tierra</li>
+        <li><span class="check green">✔</span> Almuerzo tipico en isla privada</li>
+        <li><span class="check green">✔</span> Isla Agua Azul </li></strong>(Silla y una hora de playa aproximada)</p>
+        <li><span class="check green">✔</span> Isla Baru Playa Tranquila</li></strong> (Uso de las instalaciones, vista del atardecer)</p>
+        <li><span class="check green">✔</span> Vista del atardecer</li>
+        <li><span class="check green">✔</span> Actividad de Plancton Luminoso</li>
+    </ul>
+
+    <p><strong>NO INCLUYE:</strong></p>
+    <ul class="not-included">
+        <li><span class="check red">✘</span> Impuesto portuario</li>
+        <li><span class="check red">✘</span> Entrada al Oceanario</li>
+        <li><span class="check red">✘</span> Gastos no especificados en el plan</li>
+    </ul>
+
+    <p><strong>Valor:</strong> $320,000 COP</p>
+    <p><strong>PARA CONFIRMAR RESERVA:</strong> Se debe realizar un pago parcial de <strong>$60.000</strong> por cada persona.</p>
+    <p><strong>Lugar de recogida:</strong> Hotel o punto acordado</p>
+    <p><strong>Hora de salida:</strong> 7:30 AM</p>
+    <p><strong>Hora de llegada:</strong> 8:00 PM</p>
+    
+
+
+    <a href="/reserva?tour=Cinco%20Islas%20Vip"><button>Reservar</button></a>
+</div>
+
+<style>
+    .tour-card {
+        font-family: Arial, sans-serif;
+        max-width: 400px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        background: #fff;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 5px;
+    }
+
+    .check {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .green {
+        color: green;
+    }
+
+    .red {
+        color: red;
+    }
+</style>
+
+   <!-- Cinco Islas VIP Experiences Open Bar -->
+<div class="tour-card">
+    <img src="{{ url_for('static', filename='images/open_bar.jpg') }}" alt="Cinco Islas VIP Experiences Open Bar">
+    <h2>Cinco Islas VIP Experiences Open Bar</h2></strong>$350.000 por persona</p>
+    
+    <p><strong>SU RESERVA INCLUYE:</strong></p>
+    <ul class="included">
+        <li><span class="check green">✔</span> Bar todo incluido:</li></strong>(Aguardiente, Ron, Cervezas, Agua y Gaseosa)</p>
+        <li><span class="check green">✔</span> Salidas diarias</li>
+        <li><span class="check green">✔</span> Recorrido en botes deportivos</li>
+        <li><span class="check green">✔</span> Impuesto portuario incluido</li></strong>(Salida desde el muelle Los Pegasos)</p>
+        <li><span class="check green">✔</span> Recogida hotelera en zona norte,</li></strong>Bocagrande, Laguito, Castillo Grande</p>
+        <li><span class="check green">✔</span> Open Bar en el bote</li></strong>(Agua, Ron, Aguardiente, Cerveza aprox. 4 unidades) hasta agotar existencias</p>
+        <li><span class="check green">✔</span> Parada panorámica en el fuerte de</li></strong>Bocachica con explicación histórica</p>
+        <li><span class="check green">✔</span> Panorámico por las Islas del Rosario</li>
+        <li><span class="check green">✔</span> Actividad de snorkel incluida</li>
+        <li><span class="check green">✔</span> Snorkel en la avioneta sumergida </li>
+        <li><span class="check green">✔</span> Almuerzo en la isla privada Vista Mar</li></strong> (Isla Grande) 3 opciones de comida</p>
+        <li><span class="check green">✔</span> Isla Cholon Coctel de mariscos</li>
+        <li><span class="check green">✔</span> Sillas playeras en Isla Agua Azul</li>
+        <li><span class="check green">✔</span> Sunset en Playa Tranquila con uso de instalaciones del restaurante</li>
+        <li><span class="check green">✔</span> Actividad del Plancton Luminoso</li>
+        <li><span class="check green">✔</span> Retorno en bus hasta el centro y zona hotelera Bocagrande y Laguito</li>
+    </ul>
+
+    <p><strong>NO INCLUYE:</strong></p>
+    <ul class="not-included">
+        <li><span class="check red">✘</span> Entrada al Oceanario</li>
+        <li><span class="check red">✘</span> Gastos no especificados en el plan</li>
+        
+    </ul>
+
+    <p><strong>Valor:</strong> $350,000 COP</p>
+    <p><strong>PARA CONFIRMAR RESERVA:</strong> Se debe realizar un pago parcial de <strong>$100.000</strong> por cada persona.</p>
+    <p><strong>Lugar de recogida:</strong> Hotel o punto acordado</p>
+    <p><strong>Hora de salida:</strong> 7:30 AM</p>
+    <p><strong>Hora de llegada:</strong> 8:00 PM</p>
+    
+
+
+    <a href="/reserva?tour=Cinco%20Islas%20Vip%20Experiences%20Open%20Bar"><button>Reservar</button></a>
+</div>
+
+<style>
+    .tour-card {
+        font-family: Arial, sans-serif;
+        max-width: 400px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        background: #fff;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 5px;
+    }
+
+    .check {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .green {
+        color: green;
+    }
+
+    .red {
+        color: red;
+    }
+</style>
+
+   
+<!-- Playa Blanca Plancton Luminoso -->
+<div class="tour-card">
+    <img src="{{ url_for('static', filename='images/plantom_lumi.jpg') }}" alt="Playa Blanca Plancton Luminoso">
+    <h2>Playa Blanca Plancton Luminoso</h2></strong>$120.000 por persona</p>
+    
+    <p><strong>SU RESERVA INCLUYE:</strong></p>
+    <ul class="included">
+        <li><span class="check green">✔</span> Recogida en hotel (algunas zonas)</li>
+        <li><span class="check green">✔</span> Transporte en bus climatizado</li>
+        <li><span class="check green">✔</span> Guía acompañante</li>
+        <li><span class="check green">✔</span> Almuerzo Tipico</li></strong>(Pescado o Pollo con arroz de coco, patacones y ensalada)</p>
+        <li><span class="check green">✔</span> Traslado en lancha rápida a Playa</li></strong> Tranquila a las 2:40 PM aproxima</p>
+        <li><span class="check green">✔</span> Atardecer en Playa Tranquila con sillas asoleadoras</li>
+        <li><span class="check green">✔</span> Actividad de Plancton Luminoso a las 7:00 PM</li>
+        <li><span class="check green">✔</span> Retorno a Cartagena a las 8:00 PM</li>
+    </ul>
+
+    <p><strong>NO INCLUYE:</strong></p>
+    <ul class="not-included">
+        <li><span class="check red">✘</span> Carpas, sillas en playa blanca</li>
+        <li><span class="check red">✘</span> Gastos no especificados en el plan</li>
+    </ul>
+
+    <p><strong>Valor:</strong> $120,000 COP</p>
+    <p><strong>PARA CONFIRMAR RESERVA:</strong> Se debe realizar un pago parcial de <strong>$20.000</strong> por cada persona.</p>
+
+    <p><strong>Lugar de recogida:</strong> Hotel o punto acordado</p>
+    <p><strong>Hora de salida:</strong> 7:30 AM</p>
+    <p><strong>Hora de llegada:</strong> 8:00 PM</p>
+
+    <a href="/reserva?tour=Playa%20Blanca%20Plancton%20Luminoso"><button>Reservar</button></a>
+</div>
+
+<style>
+    .tour-card {
+        font-family: Arial, sans-serif;
+        max-width: 400px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        background: #fff;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 5px;
+    }
+
+    .check {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .green {
+        color: green;
+    }
+
+    .red {
+        color: red;
+    }
+</style>
+
+<!-- Playa Tranquila Plancton Luminoso -->
+<div class="tour-card">
+    <img src="{{ url_for('static', filename='images/plantom_lumi1.jpg') }}" alt="Playa Blanca Plancton Luminoso">
+    <h2>Playa Tranquila Plancton Luminoso</h2></strong>$170.000 por persona</p>
+    
+    <p><strong>SU RESERVA INCLUYE:</strong></p>
+    <ul class="included">
+        <li><span class="check green">✔</span> Recogida en hotel (algunas zonas)</li>
+        <li><span class="check green">✔</span> Transporte en bus climatizado</li>
+        <li><span class="check green">✔</span> Guía acompañante</li>
+        <li><span class="check green">✔</span> Coctel de bienvenida</li>
+        <li><span class="check green">✔</span> Traslado en lancha rápida a Playa Tranquila a las 3:00 PM</li>
+        <li><span class="check green">✔</span> Almuerzo Tipico</li></strong>(Pescado o Pollo con arroz de coco, patacones y ensalada)</p>
+        <li><span class="check green">✔</span> Sunset en Playa Tranquila con sillas asoleadoras</li>
+        <li><span class="check green">✔</span> Actividad de Plancton Luminoso </li>
+        <li><span class="check green">✔</span> Retorno a Cartagena a las 8:00 PM</li>
+    </ul>
+
+    <p><strong>NO INCLUYE:</strong></p>
+    <ul class="not-included">
+        <li><span class="check red">✘</span> Carpas, sillas en playa blanca</li>
+        <li><span class="check red">✘</span> Gastos no especificados en el plan</li>
+    </ul>
+
+    <p><strong>Valor:</strong> $170,000 COP</p>
+    <p><strong>PARA CONFIRMAR RESERVA:</strong> Se debe realizar un pago parcial de <strong>$20.000</strong> por cada persona.</p>
+
+    <p><strong>Lugar de recogida:</strong> Hotel o punto acordado</p>
+    <p><strong>Hora de salida:</strong> 7:30 AM</p>
+    <p><strong>Hora de llegada:</strong> 8:00 PM</p>
+
+    <a href="/reserva?tour=Playa%20Tranquila%20Plancton%20Luminoso"><button>Reservar</button></a>
+</div>
+
+<style>
+    .tour-card {
+        font-family: Arial, sans-serif;
+        max-width: 400px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        background: #fff;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 5px;
+    }
+
+    .check {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .green {
+        color: green;
+    }
+
+    .red {
+        color: red;
+    }
+</style>
+
+
+   
+
+    <!-- Playa Blanca Islas del Rosario Plancton Luminoso -->
+<div class="tour-card">
+    <img src="{{ url_for('static', filename='images/plantom_lumi2.jpg') }}" alt="Playa Blanca Plancton Luminoso">
+    <h2>Playa Blanca Islas del Rosario Plancton Luminoso</h2></strong>$170.000 por persona</p>
+    
+    <p><strong>SU RESERVA INCLUYE:</strong></p>
+    <ul class="included">
+        <li><span class="check green">✔</span> Recogida en hotel (algunas zonas)</li>
+        <li><span class="check green">✔</span> Transporte en bus climatizado</li>
+        <li><span class="check green">✔</span> Guía acompañante</li>
+        <li><span class="check green">✔</span> Transporte en Lancha Rapida</li>
+        <li><span class="check green">✔</span> Panoramico por las islas del Rosario</li>
+        <li><span class="check green">✔</span> Parada en Isla San martin de Pajarales</li>
+        <li><span class="check green">✔</span> Almuerzo Tipico</li></strong>(Pescado o Pollo con arroz de coco, patacones y ensalada)</p>
+        <li><span class="check green">✔</span> Traslado en lancha rápida a Playa Tranquila a las 3:00 PM</li>
+        <li><span class="check green">✔</span> Atardecer en Playa Tranquila con sillas asoleadoras</li>
+        <li><span class="check green">✔</span> Actividad de Plancton Luminoso a las 7:00 PM</li>
+        <li><span class="check green">✔</span> Retorno a Cartagena a las 8:00 PM</li>
+    </ul>
+
+    <p><strong>NO INCLUYE:</strong></p>
+    <ul class="not-included">
+        <li><span class="check red">✘</span> Carpas, sillas en playa blanca</li>
+        <li><span class="check red">✘</span> Gastos no especificados en el plan</li>
+    </ul>
+
+    <p><strong>Valor:</strong> $170,000 COP</p>
+    <p><strong>PARA CONFIRMAR RESERVA:</strong> Se debe realizar un pago parcial de <strong>$20.000</strong> por cada persona.</p>
+
+    <p><strong>Lugar de recogida:</strong> Hotel o punto acordado</p>
+    <p><strong>Hora de salida:</strong> 7:30 AM</p>
+    <p><strong>Hora de llegada:</strong> 8:00 PM</p>
+    
+    <a href="/reserva?tour=Playa%20Tranquila%20Islas%20Rosario%20Plancton%20Luminoso"><button>Reservar</button></a>
+</div>
+
+<style>
+    .sabias-que {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        padding: 3rem 1rem;
+        background-color: #f0f8ff;
+        border-radius: 20px;
+        margin: 3rem 0;
+        flex-wrap: wrap;
+    }
+
+    .sabias-que img {
+        width: 100%;
+        max-width: 450px;
+        border-radius: 15px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .sabias-que-texto {
+        max-width: 600px;
+    }
+
+    .sabias-que-texto h2 {
+        font-size: 2rem;
+        color: #005b8f;
+        margin-bottom: 1rem;
+    }
+
+    .sabias-que-texto p {
+        font-size: 1.1rem;
+        line-height: 1.7;
+        color: #333;
+    }
+
+    @media screen and (max-width: 768px) {
+        .sabias-que {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+</style>
+
+<!-- Sección Sabías que - Barú -->
+<section class="sabias-que" style="display: flex; align-items: center; gap: 2rem; padding: 2rem;">
+    <!-- Imagen con animación -->
+    <img 
+        src="{{ url_for('static', filename='images/sabias_que_baru.jpg') }}" 
+        alt="Playa de Barú" 
+        style="width: 50%; border-radius: 15px;"
+        data-aos="fade-right"
+    >
+
+    <!-- Texto con animación -->
+    <div style="width: 50%;" data-aos="fade-left">
+        <h2 style="color: #2c3e50;">¿Sabías que?</h2>
+        <p style="font-size: 1.1rem; line-height: 1.6;">
+            La península de Barú, aunque separada por un canal artificial, es una joya del Caribe colombiano. Sus aguas cristalinas y playas de arena blanca son el hogar de una gran biodiversidad marina. Aquí también se encuentra la famosa Playa Blanca y uno de los lugares más especiales para ver el fenómeno del plancton luminoso. ¡Un paraíso natural que enamora a cualquiera que lo visite!
+        </p>
+    </div>
+</section>
+
+
+        
+{% endblock %}

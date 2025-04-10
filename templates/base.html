@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Mi Agencia de Tours{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <!-- AOS CSS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<!-- AOS Animate On Scroll -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    
+
+</head>
+<body class="{% block fondo %}{% endblock %}">
+
+    <!-- ✅ MENÚ DE NAVEGACIÓN -->
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('inicio') }}">Inicio</a></li>
+            <li><a href="{{ url_for('baru') }}">Barú</a></li>
+            <li><a href="{{ url_for('rosario') }}">Islas del Rosario</a></li>
+            <li><a href="{{ url_for('cenas') }}">Cenas & Atardeceres</a></li>
+            <li><a href="{{ url_for('city_tour') }}">City Tour</a></li>
+            <li><a href="{{ url_for('nosotros') }}">Nosotros</a></li>
+            <li><a href="{{ url_for('galeria') }}">Galería</a></li>
+            <li><a href="{{ url_for('reserva') }}">Reservar</a></li>
+        </ul>
+    </nav>
+
+    <!-- ✅ CONTENIDO DE CADA PÁGINA -->
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <p>📍 Dirección: Cartagena, Colombia</p>
+                <p>📞 Teléfono: +57 312 568 0394</p>
+                <p>📧 Email: ctgsunrisetours@gmail.com</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.facebook.com/cartagena sunrise tours" target="_blank">🌐 Facebook</a> |
+                <a href="https://www.instagram.com/@cartagena_sunrisetours" target="_blank">📷 Instagram</a> |
+                <a href="https://wa.me/573125680394" target="_blank">📲 WhatsApp</a>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/573125680394" class="whatsapp-float" target="_blank">
+        <img src="{{ url_for('static', filename='whatsapp-icon.png') }}" alt="WhatsApp">
+    </a>
+
+    <!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+    
+</body>
+</html>
+
+

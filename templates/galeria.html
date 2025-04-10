@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}Galería - Cartagena Sunrise Tours{% endblock %}
+{% block fondo %}fondo-galeria{% endblock %}
+{% block content %}
+<div class="galeria-container">
+    <h1 class="titulo">Nuestra Galería de Tours</h1>
+    <p class="descripcion">Explora los momentos inolvidables de nuestros tours.</p>
+
+    <!-- Slider -->
+    <div class="slider">
+        <div class="slider-container">
+            <img src="{{ url_for('static', filename='galeria/imagen1.jpg') }}" class="slide" alt="Imagen 1">
+            <img src="{{ url_for('static', filename='galeria/imagen2.jpg') }}" class="slide" alt="Imagen 2">
+            <img src="{{ url_for('static', filename='galeria/imagen3.jpg') }}" class="slide" alt="Imagen 3">
+            <img src="{{ url_for('static', filename='galeria/imagen4.jpg') }}" class="slide" alt="Imagen 4">
+            <img src="{{ url_for('static', filename='galeria/imagen5.jpg') }}" class="slide" alt="Imagen 5">
+            <img src="{{ url_for('static', filename='galeria/imagen6.jpg') }}" class="slide" alt="Imagen 6">
+            <img src="{{ url_for('static', filename='galeria/imagen7.jpg') }}" class="slide" alt="Imagen 7">
+            <img src="{{ url_for('static', filename='galeria/imagen8.jpg') }}" class="slide" alt="Imagen 8">
+            <img src="{{ url_for('static', filename='galeria/imagen9.jpg') }}" class="slide" alt="Imagen 9">
+            <img src="{{ url_for('static', filename='galeria/imagen10.jpg') }}" class="slide" alt="Imagen 10">
+            <img src="{{ url_for('static', filename='galeria/imagen11.jpg') }}" class="slide" alt="Imagen 11">
+        </div>
+    
+        <button class="btn-slider prev" onclick="moverSlide(-1)">&#10094;</button>
+        <button class="btn-slider next" onclick="moverSlide(1)">&#10095;</button>
+    </div>
+
+    
+</div>
+{% endblock %}

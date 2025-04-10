@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title %}Inicio - Agencia de Tours{% endblock %}
+
+{% block content %}
+    <div class="hero">
+        <div class="hero-text">
+            <h1>Descubre Cartagena con Nosotros</h1>
+        <p>Explora los mejores destinos con nuestros tours exclusivos.</p>
+            <a href="/baru"><button>Explorar Tours</button></a>
+        </div>
+    </div>
+
+    <!-- Sección de tours destacados -->
+<section class="destacados">
+    <h2>Destinos Destacados</h2>
+    <div class="tour-grid">
+
+        <a href="/baru" class="tour">
+            <img src="{{ url_for('static', filename='images/playa_blanca.jpg') }}" alt="Barú">
+            <h3>Barú</h3>
+        </a>
+
+        <a href="/islas-del-rosario" class="tour">
+            <img src="{{ url_for('static', filename='images/oceanario.jpg') }}" alt="Islas del Rosario">
+            <h3>Islas del Rosario</h3>
+        </a>
+
+        <a href="/city-tour" class="tour">
+            <img src="{{ url_for('static', filename='images/city_tour.jpg') }}" alt="City Tour">
+            <h3>City Tour en Chiva</h3>
+        </a>
+
+        <a href="/cenas-y-atardeceres" class="tour">
+            <img src="{{ url_for('static', filename='images/cena_sibarita_master.jpg') }}" alt="Cenas y Atardeceres">
+            <h3>Cenas y Atardeceres</h3>
+        </a>
+
+    </div>
+</section>
+
+{% endblock %}
