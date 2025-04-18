@@ -5,7 +5,7 @@ app = Flask(__name__)
 # ✅ Ruta de la página de inicio
 @app.route("/")
 def inicio():
-    return render_template("index.html")
+    return render_template("inicio.html")
 
 # ✅ Ruta para la página de reservas
 @app.route("/reserva", methods=["GET", "POST"])
