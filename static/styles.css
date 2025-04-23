@@ -883,3 +883,35 @@ footer {
     border-radius: 10px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 }
+/* estilo base para pantallas grandes */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  /* para móviles */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .container img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .menu {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  .navbar-nav .nav-link {
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #ffc107 !important; /* Amarillo suave */
+  }
+  
